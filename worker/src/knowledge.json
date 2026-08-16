@@ -1,0 +1,331 @@
+{
+  "profile": {
+    "personal": {
+      "name": "Jayant Singh",
+      "headline": "ML / AI Engineer",
+      "location": "Bangalore, India",
+      "email": "jayant.singh0801@gmail.com",
+      "phone": "9773739728",
+      "linkedin": "https://www.linkedin.com/in/jayant0801/",
+      "github": "https://github.com/jayant0801",
+      "website": "https://jayants08.github.io/Digital_twin_chatbot_and_portfolio/"
+    },
+    "about": {
+      "short": "ML / AI Engineer working across machine learning, NLP, LLMs, Knowledge Graphs, data science, algorithms and performance-oriented computer systems.",
+      "long": "I am an ML / AI Engineer with a strong foundation in machine learning, algorithms, software engineering and data-driven problem solving. My work spans machine learning, deep learning, natural language processing, large language models, Knowledge Graphs, data analytics and performance-oriented software engineering. At the Indian Institute of Science (IISc), I worked as a Student Researcher in the Statistics and Machine Learning Lab on LLM-based question answering, Knowledge Graphs and hallucinations in large language models, including collaborative research with British Telecom. I have also worked on diverse data analytics and deep learning projects involving NLP, recommendation systems, machine translation, time-series sensor data and statistical analysis. At IBM, I work on performance-critical routing and chip-design software, applying algorithms, computational geometry and optimization to large-scale engineering problems. This combination of AI/ML research and systems engineering allows me to approach problems from both a data-driven and algorithmic perspective."
+    },
+    "education": [
+      {
+        "institution": "Indian Institute of Science (IISc)",
+        "degree": "Master of Technology (M.Tech.)",
+        "field": "Computer Science and Engineering",
+        "start_year": "2022",
+        "end_year": "2024",
+        "description": "Graduate study at IISc with research exposure in machine learning, deep learning, natural language processing, large language models and Knowledge Graph-based systems. Worked in the Statistics and Machine Learning Lab and collaborated with British Telecom on improving question answering using Knowledge Graphs."
+      },
+      {
+        "institution": "Aligarh Muslim University, Aligarh",
+        "degree": "Bachelor of Technology (B.Tech.)",
+        "field": "Computer Science and Engineering",
+        "start_year": "2018",
+        "end_year": "2022",
+        "description": "Undergraduate study covering computer science fundamentals, algorithms, machine learning and software development. Completed a B.Tech. thesis on a movie recommendation system using content-based and collaborative filtering."
+      }
+    ],
+    "experience": [
+      {
+        "company": "IBM",
+        "role": "Software Specialist",
+        "location": "Bengaluru, Karnataka, India",
+        "start": "Aug 2024",
+        "end": "Present",
+        "description": "Work on complex routing and chip-design problems as part of the Routing Development team. Apply algorithms, data structures, computational geometry and optimization to develop high-performance solutions for large-scale routing problems.",
+        "skills": [
+          "C++",
+          "Python",
+          "Algorithms",
+          "Data Structures",
+          "Computational Geometry",
+          "Optimization",
+          "EDA",
+          "Routing"
+        ]
+      },
+      {
+        "company": "SML Lab, IISc",
+        "role": "Student Researcher",
+        "location": "Bangalore, India",
+        "start": "Aug 2023",
+        "end": "Jul 2024",
+        "description": "Conducted machine learning and NLP research involving large language models and Knowledge Graphs. Collaborated with British Telecom on improving LLM-based question answering and explored approaches for improving factual accuracy and reasoning.",
+        "skills": [
+          "Machine Learning",
+          "Deep Learning",
+          "Natural Language Processing",
+          "Large Language Models",
+          "Knowledge Graphs",
+          "Question Answering",
+          "RAG"
+        ]
+      },
+      {
+        "company": "IBM",
+        "role": "Extreme Blue Intern",
+        "location": "Bengaluru, Karnataka, India",
+        "start": "May 2023",
+        "end": "Jul 2023",
+        "description": "Worked on routing quality and chip-design software using C++ and computational geometry.",
+        "skills": [
+          "C++",
+          "Computational Geometry",
+          "Algorithms",
+          "EDA"
+        ]
+      },
+      {
+        "company": "Samsung R&D Institute India",
+        "role": "Software Engineer Intern",
+        "location": "Noida, Uttar Pradesh, India",
+        "start": "Feb 2022",
+        "end": "Jun 2022",
+        "description": "Worked in the Sensor and GPS R&D team. Independently collected and processed time-series sensor data and developed a machine learning model to infer smartphone usage states for power-efficiency improvements.",
+        "skills": [
+          "Machine Learning",
+          "Data Analysis",
+          "Time-Series Data",
+          "Naive Bayes",
+          "Sensor Data",
+          "Software Engineering"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Forecasting with Temporal Knowledge Graphs",
+        "period": "Aug 2023 – Dec 2023",
+        "organization": "Indian Institute of Science (IISc)",
+        "description": "Research project exploring temporal Knowledge Graphs in which event timestamps are associated with entity relationships, enabling reasoning and forecasting over time.",
+        "technologies": [
+          "Python",
+          "PyTorch",
+          "Knowledge Graphs",
+          "Temporal Reasoning"
+        ],
+        "links": []
+      },
+      {
+        "name": "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
+        "period": "Aug 2023 – Jul 2024",
+        "organization": "SML Lab, IISc / British Telecom",
+        "description": "Conducted collaborative research on improving question answering with large language models through Knowledge Graph integration and advanced retrieval strategies. Explored and benchmarked LLM architectures and QA datasets using structured knowledge grounding and hybrid symbolic-neural approaches.",
+        "technologies": [
+          "Python",
+          "PyTorch",
+          "NLP",
+          "Knowledge Graphs",
+          "LLMs",
+          "RAG"
+        ],
+        "links": []
+      },
+      {
+        "name": "Optimization in Chip Design with Routing Quality Checker",
+        "period": "Jan 2025 – Mar 2025",
+        "organization": "IBM",
+        "description": "Designed and developed a Routing Quality Checker to detect routing quality degradation and violations in chip layouts and recommend timing- and noise-aware fix-up strategies. Worked with large-scale multi-layer 3D geometries and computationally hard optimization problems.",
+        "technologies": [
+          "C++",
+          "Computational Geometry",
+          "Algorithms",
+          "Optimization",
+          "EDA"
+        ],
+        "links": []
+      },
+      {
+        "name": "Short Fixing in Chip Design",
+        "period": "Aug 2024 – Dec 2024",
+        "organization": "IBM",
+        "description": "Designed and implemented a high-performance 3D sweep-line algorithm for detecting short-circuit violations across large-scale chip layouts. Developed a timing-aware rerouting framework to resolve wire shorts without introducing secondary violations.",
+        "technologies": [
+          "C++",
+          "Algorithms",
+          "Computational Geometry",
+          "Optimization",
+          "EDA"
+        ],
+        "links": []
+      },
+      {
+        "name": "Free-Hand Routing",
+        "period": "Apr 2025 – Jul 2025",
+        "organization": "IBM",
+        "description": "Developed a free-hand routing approach that allows designers to sketch routing topologies naturally while the system translates the sketches into DRC-clean, manufacturable layouts. A patent was filed for the core methodology and implementation.",
+        "technologies": [
+          "AI",
+          "Computer Vision",
+          "Routing",
+          "EDA"
+        ],
+        "links": []
+      },
+      {
+        "name": "Data Analytics Projects",
+        "period": "Jul 2023 – Dec 2023",
+        "organization": "Data Analytics, IISc Bangalore",
+        "description": "Executed end-to-end data analytics projects across sports, healthcare, neuroscience, space, social networks and machine learning. Work included the Duckworth–Lewis–Stern method, smoking impact analysis, COVID-19 modelling, colour blindness, visual processing, Mars orbit analysis, community detection, hypothesis testing, recommendation systems and NLP.",
+        "technologies": [
+          "Data Analytics",
+          "Statistics",
+          "Machine Learning",
+          "NLP",
+          "Data Science"
+        ],
+        "links": []
+      },
+      {
+        "name": "Deep Learning with Natural Language Processing",
+        "period": "Jul 2023 – Dec 2023",
+        "organization": "DLNLP, IISc Bangalore",
+        "description": "Worked on deep learning and NLP projects including sentiment analysis using LSTM networks on large-scale review datasets and unified date-format conversion using an encoder-decoder neural machine translation architecture with attention.",
+        "technologies": [
+          "Deep Learning",
+          "NLP",
+          "LSTM",
+          "Machine Translation",
+          "Attention"
+        ],
+        "links": []
+      },
+      {
+        "name": "Optimizing Power Consumption on Smartphones using Machine Learning",
+        "period": "Feb 2022 – Apr 2022",
+        "organization": "Samsung R&D Institute India",
+        "description": "Collected and processed time-series sensor data from smartphones and developed a Naive Bayes-based usage-state classifier to infer active and inactive device states for adaptive power-efficiency improvements.",
+        "technologies": [
+          "Machine Learning",
+          "Naive Bayes",
+          "Time-Series Data",
+          "Data Analysis"
+        ],
+        "links": []
+      },
+      {
+        "name": "Movie Recommendation System",
+        "period": "Aug 2021 – Apr 2022",
+        "organization": "Aligarh Muslim University",
+        "description": "Built an end-to-end movie recommendation system combining content-based and collaborative filtering techniques on MovieLens data. Addressed data sparsity, cold-start and search ambiguity and deployed an interactive web interface using Django.",
+        "technologies": [
+          "Machine Learning",
+          "Recommendation Systems",
+          "Collaborative Filtering",
+          "Python",
+          "Django"
+        ],
+        "links": []
+      }
+    ],
+    "research": [
+      {
+        "title": "Hallucinations in Large Language Models",
+        "description": "M.Tech thesis at IISc investigating hallucination phenomena in large language models. Conducted controlled experiments using prompting strategies and Retrieval-Augmented Generation (RAG) techniques with the MedHALT dataset to analyze factual inconsistency and evaluate mitigation approaches.",
+        "organization": "Indian Institute of Science (IISc)",
+        "year": "2024",
+        "links": []
+      },
+      {
+        "title": "Enhancing Question Answering with Large Language Models",
+        "description": "Collaborative research with IISc and British Telecom on improving question answering performance in large language models through Knowledge Graph integration and advanced retrieval strategies. Explored structured knowledge grounding and hybrid symbolic-neural approaches.",
+        "organization": "Indian Institute of Science (IISc) / British Telecom",
+        "year": "2023 – 2024",
+        "links": []
+      },
+      {
+        "title": "Free-Hand Routing using AI",
+        "description": "Patent work at IBM India involving an AI-based approach for interpreting hand-drawn routing layouts and translating them into structured, DRC-clean routing topologies, reducing manual effort in complex chip-design workflows.",
+        "organization": "IBM India",
+        "year": "2025",
+        "links": []
+      }
+    ],
+    "skills": {
+      "programming": [
+        "Python",
+        "C/C++",
+        "Algorithms",
+        "Data Structures",
+        "Advanced SQL"
+      ],
+      "machine_learning": [
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Large Language Models",
+        "Knowledge Graphs",
+        "Retrieval-Augmented Generation",
+        "Prompting",
+        "LSTM",
+        "Machine Translation",
+        "Recommendation Systems",
+        "Statistical Analysis"
+      ],
+      "data_science": [
+        "Data Science",
+        "Data Analytics",
+        "Data Modeling",
+        "Data Mining",
+        "Time-Series Analysis",
+        "Data Visualization",
+        "Hypothesis Testing"
+      ],
+      "systems": [
+        "Computer Systems",
+        "Computational Geometry",
+        "Optimization",
+        "Software Engineering",
+        "Electronic Design Automation",
+        "Routing"
+      ],
+      "other": [
+        "Git",
+        "Linux",
+        "Django",
+        "Firebase"
+      ]
+    },
+    "certifications": [
+      {
+        "name": "C/C++ (Intermediate)",
+        "issuer": "HackerRank",
+        "issued": "Sep 2020"
+      },
+      {
+        "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
+        "issuer": "Coursera",
+        "issued": "Aug 2020"
+      }
+    ],
+    "awards": [
+      {
+        "name": "First at Robodangal",
+        "issuer": "AMURoboclub",
+        "date": "Jan 2018",
+        "description": "Won a robotics competition held at Aligarh Muslim University."
+      }
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "proficiency": "Professional working proficiency"
+      },
+      {
+        "name": "Hindi",
+        "proficiency": "Native or bilingual proficiency"
+      }
+    ]
+  },
+  "documents": {
+    "CV cum resume.txt": "--- PAGE 1 ---\n\nJayant Singh\n+91-9773739728\nSoftware Engineer\njayant.singh0801@gmail.com\nIBM Bangalore\nlinkedin.com/in/jayant0801\nEducation\nDegree\nInstitute\nBoard / University\nCGPA/Percentage\nYear\nM.Tech CSE\nIndian Institute of Science, Bangalore\nIISc, Bangalore\n7.4\n2022-2024\nB.Tech CSE\nAligarh Muslim University, Aligarh\nAMU, Aligarh\n9.193\n2018-2022\nExperience\n• IBM\nAug 2024 - Present\nSoftware Specialist\nBangalore\n– At IBM, I worked on solving complex routing challenges as part of the Routing Development team, collaborating\nclosely with US-based colleagues. Leveraging advanced C programming, data structures, and computational geometry\nknowledge, I contributed to developing high-performance solutions tailored to meet intricate routing requirements,\nensuring both efficiency and scalability.\n• LLM QA Enhancement with Knowledge Graphs – British Telecom and SML Lab\nAug 2023 - July 2024\nStatistics and Machine Learning Lab Student\nIISc Bangalore\n– Collaborated with British Telecom to improve LLM question-answering using knowledge graphs.\n– Experimented with models like GreasLM and UniKGQA, based on recent research.\n• Samsung Research Institute\nFeb 2022 - June 2022\nSoftware Engineer Intern\nNoida\n– Worked as a Software Developer in the Sensor and GPS R&D Team.\nRecent Projects\n• Free-Hand Routing\nApr 2025 – Jul 2025\nIBM, Bangalore\n– Introduced an intuitive free-hand routing paradigm that allows designers to sketch routing topologies naturally—like\ndrawing on a whiteboard, notepad, or digital canvas—while the system automatically translates them into DRC-clean,\nmanufacturable layouts.\n– Seamlessly bridges the gap between conceptual design intent and automated layout generation, significantly reducing\nmanual effort and design turnaround time.\n– Patent filed for the core methodology and implementation.\n• Routing Quality Checker\nJan 2025 – Mar 2025\nIBM, Bangalore\n– Designed and developed a Routing Quality Checker to systematically detect routing quality degradation and violations\nin chip layouts, and recommend timing- and noise-aware fix-up strategies.\n– Addressed the challenge of analyzing millions of multi-layer 3D geometries, formulating the problem as a computa-\ntionally hard optimization task and implementing multiple complementary algorithms to collaboratively derive near-\noptimal, DRC-clean solutions at scale.\n• Short Fixing in Chip Design (C++)\nAug 2024 – Dec 2024\nIBM, Bangalore\n– Designed and implemented a high-performance 3D sweep-line algorithm to accurately detect short-circuit violations\nacross large-scale chip layouts.\n– Developed a timing-aware rerouting framework to resolve wire shorts without introducing secondary violations, effi-\nciently navigating millions of 3D geometries to compute near-optimal, manufacturable routing paths.\n• Data Analytics Projects\nJul 2023 – Dec 2023\nData Analytics, IISc Bangalore\n– Executed end-to-end data analytics projects spanning multiple domains, including sports analytics (Duckworth–Lewis–Stern\nmethod), healthcare (smoking impact, COVID-19 modeling, color blindness), neuroscience (visual processing), space\nanalytics (Mars orbit analysis), social networks (community detection), and machine learning (hypothesis testing, rec-\nommender systems, NLP).\n• Deep Learning with Natural Language Processing\nJul 2023 – Dec 2023\nDLNLP, IISc Bangalore\n– Sentiment Analysis using LSTM: Built a scalable sentiment classification pipeline using LSTM networks trained on\nlarge-scale textual review datasets.\n– Unified Date Format via Neural Machine Translation: Implemented an encoder–decoder model with attention to\nnormalize heterogeneous date formats into a unified canonical representation.\n\n\n--- PAGE 2 ---\n\n• Optimizing Power Consumption on Smartphones using Machine Learning\nFeb 2022 – Apr 2022\nSamsung Research Institute, Noida\n– Independently collected and preprocessed large-scale time-series sensor data (ambient light, gyroscope, accelerometer)\nto model real-world user interaction patterns.\n– Developed a Naive Bayes–based usage state classifier to infer active/inactive device states, enabling adaptive system\nbehavior for improved power efficiency.\nThesis\n• M.Tech Thesis: Hallucinations in Large Language Models\nJan 2024 – Jun 2024\nIndian Institute of Science (IISc), Bangalore\n– Investigated hallucination phenomena in large language models, with a systematic study of prompting strategies and\nRetrieval-Augmented Generation (RAG) techniques using the MedHALT dataset.\n– Designed controlled experiments to analyze factual inconsistency, quantified hallucination trends, and evaluated miti-\ngation effectiveness across different inference setups.\n– Thesis Link: View Thesis\n• Enhancing Question Answering with Large Language Models\n—\nIISc Bangalore in collaboration with British Telecom\n– Conducted collaborative research with IISc Bangalore and British Telecom on improving question answering (QA)\nperformance in LLMs through the integration of knowledge graphs and advanced retrieval strategies.\n– Explored and benchmarked multiple LLM architectures and QA datasets, evaluating techniques such as structured\nknowledge grounding, retrieval-augmented generation, and hybrid symbolic–neural approaches to improve factual ac-\ncuracy and reasoning.\n– Project Report: View Report\n• B.Tech Thesis: Movie Recommendation System\nAug 2021 – Apr 2022\nAligarh Muslim University\n– Built an end-to-end movie recommendation system combining content-based filtering and collaborative filtering tech-\nniques on MovieLens data.\n– Addressed real-world challenges such as data sparsity, cold-start, and search ambiguity, and deployed an interactive\nweb interface using Django.\n– Project Report: View Report\nSkills\n• Technical Skills:Machine Learning, NLP, Data Modeling, Data Mining, Algorithms and Data Structures\n• Soft Skills:Critical Thinking, Problem Solving, Time Management, Leadership\n• Programming Languages: C/C++, Python\n• Database:Advanced SQL, Firebase",
+    "Jayant Singh _ LinkedIn.txt": "--- PAGE 1 ---\n\n\n\n--- PAGE 2 ---\n\n\n\n--- PAGE 3 ---\n\n\n\n--- PAGE 4 ---\n\n\n\n--- PAGE 5 ---\n\n\n\n--- PAGE 6 ---\n\n\n\n--- PAGE 7 ---\n\n\n\n--- PAGE 8 ---\n\n\n\n--- PAGE 9 ---"
+  }
+}
