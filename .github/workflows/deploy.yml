@@ -20,7 +20,11 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run build
+
+      - name: Build Next.js site
+        env:
+          NEXT_PUBLIC_CHAT_API_URL: https://jayant-digital-twin-api.jayant-digital-twin.workers.dev
+        run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
