@@ -1,0 +1,127 @@
+
+
+--- PAGE 1 ---
+
+Jayant Singh
++91-9773739728
+Software Engineer
+jayant.singh0801@gmail.com
+IBM Bangalore
+linkedin.com/in/jayant0801
+Education
+Degree
+Institute
+Board / University
+CGPA/Percentage
+Year
+M.Tech CSE
+Indian Institute of Science, Bangalore
+IISc, Bangalore
+7.4
+2022-2024
+B.Tech CSE
+Aligarh Muslim University, Aligarh
+AMU, Aligarh
+9.193
+2018-2022
+Experience
+• IBM
+Aug 2024 - Present
+Software Specialist
+Bangalore
+– At IBM, I worked on solving complex routing challenges as part of the Routing Development team, collaborating
+closely with US-based colleagues. Leveraging advanced C programming, data structures, and computational geometry
+knowledge, I contributed to developing high-performance solutions tailored to meet intricate routing requirements,
+ensuring both efficiency and scalability.
+• LLM QA Enhancement with Knowledge Graphs – British Telecom and SML Lab
+Aug 2023 - July 2024
+Statistics and Machine Learning Lab Student
+IISc Bangalore
+– Collaborated with British Telecom to improve LLM question-answering using knowledge graphs.
+– Experimented with models like GreasLM and UniKGQA, based on recent research.
+• Samsung Research Institute
+Feb 2022 - June 2022
+Software Engineer Intern
+Noida
+– Worked as a Software Developer in the Sensor and GPS R&D Team.
+Recent Projects
+• Free-Hand Routing
+Apr 2025 – Jul 2025
+IBM, Bangalore
+– Introduced an intuitive free-hand routing paradigm that allows designers to sketch routing topologies naturally—like
+drawing on a whiteboard, notepad, or digital canvas—while the system automatically translates them into DRC-clean,
+manufacturable layouts.
+– Seamlessly bridges the gap between conceptual design intent and automated layout generation, significantly reducing
+manual effort and design turnaround time.
+– Patent filed for the core methodology and implementation.
+• Routing Quality Checker
+Jan 2025 – Mar 2025
+IBM, Bangalore
+– Designed and developed a Routing Quality Checker to systematically detect routing quality degradation and violations
+in chip layouts, and recommend timing- and noise-aware fix-up strategies.
+– Addressed the challenge of analyzing millions of multi-layer 3D geometries, formulating the problem as a computa-
+tionally hard optimization task and implementing multiple complementary algorithms to collaboratively derive near-
+optimal, DRC-clean solutions at scale.
+• Short Fixing in Chip Design (C++)
+Aug 2024 – Dec 2024
+IBM, Bangalore
+– Designed and implemented a high-performance 3D sweep-line algorithm to accurately detect short-circuit violations
+across large-scale chip layouts.
+– Developed a timing-aware rerouting framework to resolve wire shorts without introducing secondary violations, effi-
+ciently navigating millions of 3D geometries to compute near-optimal, manufacturable routing paths.
+• Data Analytics Projects
+Jul 2023 – Dec 2023
+Data Analytics, IISc Bangalore
+– Executed end-to-end data analytics projects spanning multiple domains, including sports analytics (Duckworth–Lewis–Stern
+method), healthcare (smoking impact, COVID-19 modeling, color blindness), neuroscience (visual processing), space
+analytics (Mars orbit analysis), social networks (community detection), and machine learning (hypothesis testing, rec-
+ommender systems, NLP).
+• Deep Learning with Natural Language Processing
+Jul 2023 – Dec 2023
+DLNLP, IISc Bangalore
+– Sentiment Analysis using LSTM: Built a scalable sentiment classification pipeline using LSTM networks trained on
+large-scale textual review datasets.
+– Unified Date Format via Neural Machine Translation: Implemented an encoder–decoder model with attention to
+normalize heterogeneous date formats into a unified canonical representation.
+
+
+--- PAGE 2 ---
+
+• Optimizing Power Consumption on Smartphones using Machine Learning
+Feb 2022 – Apr 2022
+Samsung Research Institute, Noida
+– Independently collected and preprocessed large-scale time-series sensor data (ambient light, gyroscope, accelerometer)
+to model real-world user interaction patterns.
+– Developed a Naive Bayes–based usage state classifier to infer active/inactive device states, enabling adaptive system
+behavior for improved power efficiency.
+Thesis
+• M.Tech Thesis: Hallucinations in Large Language Models
+Jan 2024 – Jun 2024
+Indian Institute of Science (IISc), Bangalore
+– Investigated hallucination phenomena in large language models, with a systematic study of prompting strategies and
+Retrieval-Augmented Generation (RAG) techniques using the MedHALT dataset.
+– Designed controlled experiments to analyze factual inconsistency, quantified hallucination trends, and evaluated miti-
+gation effectiveness across different inference setups.
+– Thesis Link: View Thesis
+• Enhancing Question Answering with Large Language Models
+—
+IISc Bangalore in collaboration with British Telecom
+– Conducted collaborative research with IISc Bangalore and British Telecom on improving question answering (QA)
+performance in LLMs through the integration of knowledge graphs and advanced retrieval strategies.
+– Explored and benchmarked multiple LLM architectures and QA datasets, evaluating techniques such as structured
+knowledge grounding, retrieval-augmented generation, and hybrid symbolic–neural approaches to improve factual ac-
+curacy and reasoning.
+– Project Report: View Report
+• B.Tech Thesis: Movie Recommendation System
+Aug 2021 – Apr 2022
+Aligarh Muslim University
+– Built an end-to-end movie recommendation system combining content-based filtering and collaborative filtering tech-
+niques on MovieLens data.
+– Addressed real-world challenges such as data sparsity, cold-start, and search ambiguity, and deployed an interactive
+web interface using Django.
+– Project Report: View Report
+Skills
+• Technical Skills:Machine Learning, NLP, Data Modeling, Data Mining, Algorithms and Data Structures
+• Soft Skills:Critical Thinking, Problem Solving, Time Management, Leadership
+• Programming Languages: C/C++, Python
+• Database:Advanced SQL, Firebase

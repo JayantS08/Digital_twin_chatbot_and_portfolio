@@ -4,4 +4,4 @@ compatibility_date = "2026-08-01"
 
 [vars]
 GEMINI_MODEL = "gemini-3.1-flash-lite"
-ALLOWED_ORIGIN = "https://YOUR_GITHUB_USERNAME.github.io"
+ALLOWED_ORIGIN = "https://jayants08.github.io"

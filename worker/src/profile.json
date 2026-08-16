@@ -1,0 +1,231 @@
+{
+  "personal": {
+    "name": "Jayant Singh",
+    "headline": "ML / AI Engineer",
+    "location": "Bangalore, India",
+    "email": "jayant.singh0801@gmail.com",
+    "phone": "9773739728",
+    "linkedin": "https://www.linkedin.com/in/jayant0801/",
+    "github": "https://github.com/jayant0801",
+    "website": "https://jayants08.github.io/Digital_twin_chatbot_and_portfolio/"
+  },
+
+  "about": {
+    "short": "I build intelligent systems, algorithms and infrastructure at the intersection of artificial intelligence, machine learning and computer systems.",
+    "long": "I am an ML / AI Engineer with a strong foundation in algorithms, software engineering and machine learning. My work spans intelligent systems, natural language processing, knowledge graphs and performance-oriented software engineering. At IISc, I worked as a Student Researcher in the SML Lab on machine learning and NLP problems involving Knowledge Graphs and large language models. I have also worked at IBM on routing and chip-design software, applying algorithms, computational geometry and optimization to performance-critical engineering problems."
+  },
+
+  "education": [
+    {
+      "institution": "Indian Institute of Science (IISc)",
+      "degree": "Master of Technology (M.Tech.)",
+      "field": "Computer Software Engineering",
+      "start_year": "2022",
+      "end_year": "2024",
+      "description": "Graduate study at IISc with research exposure in machine learning, natural language processing and Knowledge Graph-based systems."
+    },
+    {
+      "institution": "Aligarh Muslim University, Aligarh",
+      "degree": "Bachelor of Technology (B.Tech.)",
+      "field": "Computer Engineering",
+      "start_year": "2018",
+      "end_year": "2022",
+      "description": ""
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "IBM",
+      "role": "Software Specialist",
+      "location": "Bengaluru, Karnataka, India",
+      "start": "Jul 2024",
+      "end": "Present",
+      "description": "Working on software engineering and computational problems involving algorithms, systems and performance-oriented engineering.",
+      "skills": [
+        "C++",
+        "Python",
+        "Algorithms",
+        "Data Structures",
+        "Optimization"
+      ]
+    },
+    {
+      "company": "SML Lab, IISc",
+      "role": "Student Researcher",
+      "location": "India",
+      "start": "Jun 2023",
+      "end": "Jul 2024",
+      "description": "Worked on machine learning and natural language processing research involving Knowledge Graphs and intelligent question-answering systems.",
+      "skills": [
+        "Machine Learning",
+        "Natural Language Processing",
+        "Deep Learning",
+        "Knowledge Graphs"
+      ]
+    },
+    {
+      "company": "IBM",
+      "role": "Extreme Blue Intern",
+      "location": "Bengaluru, Karnataka, India",
+      "start": "May 2023",
+      "end": "Jul 2023",
+      "description": "Worked on routing quality and chip-design software involving C++ and computational geometry.",
+      "skills": [
+        "C++",
+        "Computational Geometry",
+        "Algorithms"
+      ]
+    },
+    {
+      "company": "Samsung R&D Institute India",
+      "role": "Intern",
+      "location": "Noida, Uttar Pradesh, India",
+      "start": "Feb 2022",
+      "end": "May 2022",
+      "description": "Worked in the System Development Lab.",
+      "skills": [
+        "Software Engineering",
+        "System Development"
+      ]
+    }
+  ],
+
+  "projects": [
+  {
+    "name": "Forecasting with Temporal Knowledge Graphs",
+    "period": "Aug 2023 – Dec 2023",
+    "organization": "Indian Institute of Science (IISc)",
+    "description": "Research project exploring temporal Knowledge Graphs in which event timestamps are associated with entity relationships, enabling reasoning and forecasting over time.",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "Knowledge Graphs",
+      "Temporal Reasoning"
+    ],
+    "links": []
+  },
+  {
+    "name": "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
+    "period": "TODO",
+    "organization": "SML Lab, IISc",
+    "description": "Research on using Knowledge Graphs to improve reasoning and question answering with machine learning and large language models.",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Knowledge Graphs",
+      "LLMs"
+    ],
+    "links": []
+  },
+  {
+    "name": "Optimization in Chip Design with Routing Quality Checker",
+    "period": "May 2023 – Aug 2023",
+    "organization": "IBM",
+    "description": "Developed an optimized software architecture for a Routing Quality Checker and worked on a Timing-Aware Fixer as part of an IBM internship.",
+    "technologies": [
+      "C++",
+      "Computational Geometry",
+      "Algorithms"
+    ],
+    "links": []
+  },
+  {
+    "name": "Data Analytics Projects",
+    "period": "Jul 2023 – Dec 2023",
+    "organization": "Data Analytics, IISc Bangalore",
+    "description": "Worked on diverse data analytics projects across sports, health, neuroscience, space, social networks and machine learning. Projects included the Duckworth-Lewis-Stern method, effects of smoking, COVID-19 modelling, colour blindness, visual processing, Mars orbit analysis, community detection, hypothesis testing, recommendation systems and NLP.",
+    "technologies": [
+      "Data Analytics",
+      "Statistics",
+      "Machine Learning",
+      "NLP"
+    ],
+    "links": []
+  },
+  {
+    "name": "Deep Learning with Natural Language Processing",
+    "period": "Jul 2023 – Dec 2023",
+    "organization": "DLNLP, IISc Bangalore",
+    "description": "Worked on deep learning and NLP projects including sentiment analysis using LSTM networks on a large-scale review dataset and unified date-format conversion using machine translation with an Encoder-Decoder Attention architecture.",
+    "technologies": [
+      "Deep Learning",
+      "NLP",
+      "LSTM",
+      "Machine Translation",
+      "Attention"
+    ],
+    "links": []
+  }
+],
+
+  "research": [
+    {
+      "title": "Free Hand Routing using AI",
+      "description": "Patent work at IBM India addressing automation of complex design workflows using an intelligent vision-based approach to interpret hand-drawn layouts and convert them into structured routing topologies.",
+      "organization": "IBM India",
+      "year": "2025",
+      "links": []
+    }
+  ],
+
+  "skills": {
+    "programming": [
+      "Python",
+      "C++",
+      "Algorithms",
+      "Data Structures"
+    ],
+    "machine_learning": [
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Knowledge Graphs",
+      "Large Language Models"
+    ],
+    "systems": [
+      "Computer Systems",
+      "Computational Geometry",
+      "Optimization",
+      "Software Engineering"
+    ],
+    "other": [
+      "Git",
+      "Linux"
+    ]
+  },
+
+  "certifications": [
+    {
+      "name": "C/C++ (Intermediate)",
+      "issuer": "HackerRank",
+      "issued": "Sep 2020"
+    },
+    {
+      "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
+      "issuer": "Coursera",
+      "issued": "Aug 2020"
+    }
+  ],
+
+  "awards": [
+    {
+      "name": "First at Robodangal",
+      "issuer": "AMURoboclub",
+      "date": "Jan 2018",
+      "description": "Won a robotics competition held at Aligarh Muslim University."
+    }
+  ],
+
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Professional working proficiency"
+    },
+    {
+      "name": "Hindi",
+      "proficiency": "Native or bilingual proficiency"
+    }
+  ]
+}
