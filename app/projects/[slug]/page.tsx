@@ -190,7 +190,8 @@ const projects: Project[] = [
       "Encoder–Decoder",
       "Neural Machine Translation",
       "Attention"
-    ]
+    ],
+    links: [],
   },
 
   {
