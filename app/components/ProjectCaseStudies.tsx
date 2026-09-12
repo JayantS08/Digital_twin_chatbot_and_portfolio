@@ -19,6 +19,22 @@ type CaseStudy = {
   focus: { label: string; title: string; text: string }[];
   insight: string;
   technologies: string[];
+
+  visuals?: {
+    src: string;
+    alt: string;
+    caption: string;
+  }[];
+
+  impact?: {
+    value: string;
+    label: string;
+  }[];
+
+  patent?: {
+    title: string;
+    description: string;
+  };
 };
 
 const studies: Record<string, CaseStudy> = {
