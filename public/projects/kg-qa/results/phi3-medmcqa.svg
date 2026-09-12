@@ -1,0 +1,139 @@
+<svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 900 430"
+      width="900"
+      height="430"
+    >
+      <style>
+        .title {
+          font: 600 31px Arial, Helvetica, sans-serif;
+          fill: #11110f;
+          letter-spacing: -1px;
+        }
+
+        .subtitle {
+          font: 14px Arial, Helvetica, sans-serif;
+          fill: #77776f;
+        }
+
+        .label {
+          font: 500 14px Arial, Helvetica, sans-serif;
+          fill: #11110f;
+        }
+
+        .value {
+          font: 600 14px Arial, Helvetica, sans-serif;
+          fill: #11110f;
+        }
+
+        .axis {
+          font: 11px Arial, Helvetica, sans-serif;
+          fill: #98988f;
+        }
+      </style>
+
+      <rect width="100%" height="100%" fill="#ffffff"/>
+
+      <text x="0" y="38" class="title">Phi-3-mini on MedMCQA</text>
+      <text x="0" y="66" class="subtitle">Accuracy comparison across prompting strategies</text>
+
+      
+        <text x="0" y="127" class="label">Normal prompting</text>
+
+        <rect
+          x="225"
+          y="105"
+          width="605"
+          height="32"
+          rx="3"
+          fill="#ecece6"
+        />
+
+        <rect
+          x="225"
+          y="105"
+          width="385.5"
+          height="32"
+          rx="3"
+          fill="#1b1b19"
+        />
+
+        <text
+          x="622.5"
+          y="128"
+          class="value"
+        >
+          38.23%
+        </text>
+        
+        <text x="0" y="212" class="label">ZK-GenMed 1</text>
+
+        <rect
+          x="225"
+          y="190"
+          width="605"
+          height="32"
+          rx="3"
+          fill="#ecece6"
+        />
+
+        <rect
+          x="225"
+          y="190"
+          width="480.1"
+          height="32"
+          rx="3"
+          fill="#ff5a36"
+        />
+
+        <text
+          x="717.1"
+          y="213"
+          class="value"
+        >
+          47.61%
+        </text>
+        
+        <text x="0" y="297" class="label">ZK-GenMed 2</text>
+
+        <rect
+          x="225"
+          y="275"
+          width="605"
+          height="32"
+          rx="3"
+          fill="#ecece6"
+        />
+
+        <rect
+          x="225"
+          y="275"
+          width="340.5"
+          height="32"
+          rx="3"
+          fill="#1b1b19"
+        />
+
+        <text
+          x="577.5"
+          y="298"
+          class="value"
+        >
+          33.77%
+        </text>
+        
+
+      <line
+        x1="225"
+        y1="332"
+        x2="830"
+        y2="332"
+        stroke="#d8d8d0"
+      />
+
+      <text x="225" y="360" class="axis">0%</text>
+      <text x="426.66666666666663" y="360" class="axis">20%</text>
+      <text x="628.3333333333333" y="360" class="axis">40%</text>
+      <text x="810.0" y="360" class="axis">60%</text>
+    </svg>
+    

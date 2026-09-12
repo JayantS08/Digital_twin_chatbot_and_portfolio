@@ -1,4 +1,8 @@
+import KnowledgeQAResearchCaseStudy from "../../components/KnowledgeQAResearchCaseStudy";
 import { notFound } from "next/navigation";
+import ProjectCaseStudy, {
+  hasProjectCaseStudy,
+} from "../../components/ProjectCaseStudies";
 
 type SubProject = {
   title: string;
@@ -163,47 +167,30 @@ const projects: Project[] = [
   {
     name: "Deep Learning with Natural Language Processing",
     period: "Jul 2023 – Dec 2023",
-    organization: "DLNLP, IISc Bangalore",
+    organization: "IISc Bangalore",
     description:
-      "Deep learning and NLP projects exploring sequence modelling, sentiment analysis and neural machine translation.",
+      "A collection of deep learning projects exploring how neural networks model and generate natural language, spanning sentiment classification, recurrent sequence modelling and neural machine translation.",
+  
     problem:
-      "The projects focused on learning useful representations from sequential textual data. One task involved predicting sentiment from large-scale review text, while another required converting dates written in different textual formats into a single standardized representation.",
+      "Natural-language tasks require models to capture context across variable-length sequences rather than treating words as independent features. The work explored this challenge across both discriminative tasks, such as sentiment prediction, and generative tasks, such as sequence-to-sequence translation.",
+  
     approach:
-      "For sentiment analysis, used recurrent neural networks with LSTM units to capture long-range dependencies in textual reviews. For date normalization, developed an encoder-decoder neural machine translation architecture with an attention mechanism to learn mappings between variable input date formats and a unified output representation.",
+      "Built complete NLP pipelines covering preprocessing, sequence representation, training and evaluation. Studied recurrent neural networks and LSTM architectures for learning long-range dependencies in text, applied sequence models to sentiment classification, and developed encoder–decoder neural machine translation systems. Attention mechanisms were explored to allow the decoder to dynamically focus on relevant source tokens during generation. Models and training pipelines were implemented in PyTorch.",
+  
     results:
-      "Implemented complete deep-learning pipelines for text preprocessing, sequence modelling, training and evaluation. The work provided practical experience with LSTMs, encoder-decoder architectures and attention-based sequence-to-sequence learning.",
+      "The projects provided hands-on experience with the full lifecycle of deep-learning-based NLP systems: preparing noisy text data, representing variable-length sequences, training recurrent architectures, evaluating predictions and understanding the transition from basic sequence models to attention-based encoder–decoder systems.",
+  
     technologies: [
       "Python",
       "PyTorch",
       "Deep Learning",
-      "NLP",
+      "Natural Language Processing",
       "LSTM",
-      "Encoder-Decoder",
-      "Machine Translation",
-      "Attention",
-    ],
-    links: [],
-  },
-
-  {
-    name: "Forecasting with Temporal Knowledge Graphs",
-    period: "Aug 2023 – Dec 2023",
-    organization: "Indian Institute of Science (IISc)",
-    description:
-      "Research project exploring temporal Knowledge Graphs in which event timestamps are associated with entity relationships, enabling reasoning and forecasting over time.",
-    problem:
-      "Traditional Knowledge Graphs represent relationships between entities but usually do not explicitly model how those relationships evolve over time. The project explored how temporal information can be incorporated into structured knowledge representations for forecasting future events.",
-    approach:
-      "Studied Temporal Knowledge Graph representations and reasoning techniques in which timestamped relationships are used to model evolving interactions between entities. Explored temporal reasoning and forecasting over historical event sequences.",
-    results:
-      "Developed practical experience with temporal Knowledge Graph modelling and with using structured historical relationships for reasoning and forecasting tasks.",
-    technologies: [
-      "Python",
-      "PyTorch",
-      "Knowledge Graphs",
-      "Temporal Reasoning",
-    ],
-    links: [],
+      "Sequence Modelling",
+      "Encoder–Decoder",
+      "Neural Machine Translation",
+      "Attention"
+    ]
   },
 
   {
@@ -1564,6 +1551,17 @@ export default async function ProjectPage({
 
   if (slug === "data-analytics-projects") {
     return <DataAnalyticsCaseStudy />;
+  }
+
+  if (
+    slug ===
+    "knowledge-graph-reasoning-and-knowledge-graph-based-question-answering"
+  ) {
+    return <KnowledgeQAResearchCaseStudy />;
+  }
+
+  if (hasProjectCaseStudy(slug)) {
+    return <ProjectCaseStudy slug={slug} />;
   }
 
   return (

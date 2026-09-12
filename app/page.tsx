@@ -37,20 +37,6 @@ const projects = [
 
   {
     number: "03",
-    title: "Forecasting with Temporal Knowledge Graphs",
-    description:
-      "Explored temporal Knowledge Graphs for modelling timestamped entity relationships and reasoning over historical event sequences to support forecasting tasks.",
-    meta: "Indian Institute of Science (IISc)\nAug 2023 – Dec 2023",
-    tags: [
-      "Knowledge Graphs",
-      "Temporal Reasoning",
-      "PyTorch",
-      "Machine Learning",
-    ],
-  },
-
-  {
-    number: "04",
     title:
       "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
     description:
@@ -66,7 +52,7 @@ const projects = [
   },
 
   {
-    number: "05",
+    number: "04",
     title: "Optimization in Chip Design with Routing Quality Checker",
     description:
       "Developed algorithms to detect degraded routing quality across large multi-layer chip layouts and generate timing-, noise- and DRC-aware routing improvements.",
@@ -81,7 +67,7 @@ const projects = [
   },
 
   {
-    number: "06",
+    number: "05",
     title: "Short Fixing in Chip Design",
     description:
       "Designed high-performance geometric algorithms to detect short-circuit violations and perform localized timing-aware rerouting across large-scale chip designs.",
@@ -96,7 +82,7 @@ const projects = [
   },
 
   {
-    number: "07",
+    number: "06",
     title: "Free-Hand Routing",
     description:
       "Developed an AI-assisted routing workflow that converts designer-drawn routing intent into legal, manufacturable chip wiring while preserving physical-design constraints.",
@@ -111,7 +97,7 @@ const projects = [
   },
 
   {
-    number: "08",
+    number: "07",
     title:
       "Optimizing Power Consumption on Smartphones using Machine Learning",
     description:
@@ -126,7 +112,7 @@ const projects = [
   },
 
   {
-    number: "09",
+    number: "08",
     title: "Movie Recommendation System",
     description:
       "Built an end-to-end recommendation platform combining content-based and collaborative filtering on MovieLens data, with an interactive Django web interface.",
