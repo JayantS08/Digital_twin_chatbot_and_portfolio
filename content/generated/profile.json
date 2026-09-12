@@ -104,6 +104,39 @@
 
   "projects": [
     {
+      "name": "Data Analytics Projects",
+      "period": "Jul 2023 – Dec 2023",
+      "organization": "Data Analytics, IISc Bangalore",
+      "description": "Completed multiple end-to-end data analytics and machine learning projects across sports, healthcare, neuroscience, space science, social networks and recommendation systems. The projects involved statistical modelling, numerical optimization, graph algorithms, hypothesis testing, time-series and scientific data analysis, and machine learning on real-world datasets. Topics included Duckworth–Lewis–Stern cricket resource modelling, COVID-19 modelling, colour blindness analysis, visual processing, Mars orbit reconstruction, community detection, hypothesis testing and recommendation systems.",
+      "technologies": [
+        "Python",
+        "Data Analytics",
+        "Statistics",
+        "Machine Learning",
+        "Data Science",
+        "Numerical Optimization",
+        "Graph Algorithms"
+      ],
+      "links": []
+    },
+    {
+      "name": "Deep Learning with Natural Language Processing",
+      "period": "Jul 2023 – Dec 2023",
+      "organization": "DLNLP, IISc Bangalore",
+      "description": "Worked on deep learning and natural language processing projects including sentiment analysis using LSTM networks on large-scale textual review datasets and neural machine translation for converting dates written in different formats into a standardized representation. The translation system used an encoder-decoder architecture with attention to learn mappings between variable textual date formats.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Deep Learning",
+        "NLP",
+        "LSTM",
+        "Encoder-Decoder",
+        "Machine Translation",
+        "Attention"
+      ],
+      "links": []
+    },
+    {
       "name": "Forecasting with Temporal Knowledge Graphs",
       "period": "Aug 2023 – Dec 2023",
       "organization": "Indian Institute of Science (IISc)",
@@ -169,34 +202,6 @@
         "Computer Vision",
         "Routing",
         "EDA"
-      ],
-      "links": []
-    },
-    {
-      "name": "Data Analytics Projects",
-      "period": "Jul 2023 – Dec 2023",
-      "organization": "Data Analytics, IISc Bangalore",
-      "description": "Executed end-to-end data analytics projects across sports, healthcare, neuroscience, space, social networks and machine learning. Work included the Duckworth–Lewis–Stern method, smoking impact analysis, COVID-19 modelling, colour blindness, visual processing, Mars orbit analysis, community detection, hypothesis testing, recommendation systems and NLP.",
-      "technologies": [
-        "Data Analytics",
-        "Statistics",
-        "Machine Learning",
-        "NLP",
-        "Data Science"
-      ],
-      "links": []
-    },
-    {
-      "name": "Deep Learning with Natural Language Processing",
-      "period": "Jul 2023 – Dec 2023",
-      "organization": "DLNLP, IISc Bangalore",
-      "description": "Worked on deep learning and NLP projects including sentiment analysis using LSTM networks on large-scale review datasets and unified date-format conversion using an encoder-decoder neural machine translation architecture with attention.",
-      "technologies": [
-        "Deep Learning",
-        "NLP",
-        "LSTM",
-        "Machine Translation",
-        "Attention"
       ],
       "links": []
     },

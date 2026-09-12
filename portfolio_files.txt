@@ -1,0 +1,1843 @@
+============================================================
+GLOBAL CSS - PART 1
+============================================================
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+:root {
+  --bg: #fff;
+  --text: #111;
+  --muted: #666;
+  --line: #deded8;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(var(--max), calc(100% - 48px));
+  margin: auto;
+}
+
+/* ==================== NAVIGATION ==================== */
+
+.nav {
+  position: fixed;
+  z-index: 50;
+  inset: 0 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #eee;
+}
+
+.nav-inner {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font: 13px "DM Mono", monospace;
+  letter-spacing: 0.14em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 13px;
+  color: #666;
+}
+
+.nav-links a:hover {
+  color: #111;
+}
+
+/* ==================== HERO ==================== */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 100px;
+}
+
+.kicker,
+.section-number,
+.status,
+.project-num,
+.project-meta,
+.tag,
+.date {
+  font-family: "DM Mono", monospace;
+}
+
+.kicker {
+  font-size: 12px;
+  color: #777;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 22px 0;
+  font-size: clamp(68px, 11vw, 154px);
+  line-height: 0.82;
+  letter-spacing: -0.085em;
+  font-weight: 600;
+}
+
+.hero h1 em,
+.section h2 em {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.hero-copy {
+  max-width: 650px;
+  color: #5d5d5d;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  border: 1px solid #111;
+  border-radius: 999px;
+  padding: 13px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #111;
+  border-color: #d0d0ca;
+}
+
+/* ==================== SECTIONS ==================== */
+
+.section {
+  padding: 120px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 70px;
+  margin-bottom: 55px;
+}
+
+.section-number {
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: clamp(46px, 6.4vw, 82px);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+  margin: 0;
+}
+
+.section-intro {
+  color: #666;
+  line-height: 1.75;
+  margin-top: 30px;
+}
+
+/* ==================== PROJECTS ==================== */
+
+.projects {
+  border-top: 1px solid #111;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 70px 1fr 220px;
+  gap: 30px;
+  padding: 35px 0;
+  border-bottom: 1px solid var(--line);
+  transition: 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project:hover {
+  padding-left: 12px;
+}
+
+.project-num {
+  font-size: 12px;
+  color: #888;
+}
+
+.project h3 {
+  font-size: 29px;
+  letter-spacing: -0.04em;
+  margin: 0 0 12px;
+}
+
+.project p {
+  color: #666;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0;
+}
+
+.project-meta {
+  white-space: pre-line;
+  color: #888;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.project-link {
+  margin-top: 18px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #111;
+  transition: 0.2s;
+}
+
+.project:hover .project-link {
+  transform: translateX(4px);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.tag {
+  font-size: 10px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 6px 9px;
+  color: #666;
+}
+
+/* ==================== TWO COLUMN ==================== */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+============================================================
+GLOBAL CSS - PART 2
+============================================================
+
+.big-text {
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  margin: 0;
+}
+
+.muted {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==================== RESEARCH ==================== */
+
+.research-item {
+  margin-bottom: 40px;
+}
+
+.research-item:last-child {
+  margin-bottom: 0;
+}
+
+.research-item h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #111;
+}
+
+/* ==================== TIMELINE ==================== */
+
+.timeline {
+  border-left: 1px solid #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 48px 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #111;
+}
+
+.timeline-item h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.date {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* ==================== SKILLS ==================== */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 45px;
+}
+
+.skill {
+  border: 1px solid #d7d7d0;
+  padding: 11px 14px;
+  border-radius: 999px;
+  color: #555;
+  font-size: 13px;
+}
+
+/* ==================== DIGITAL TWIN ==================== */
+
+.chat {
+  border: 1px solid #d8d8d2;
+  border-radius: 24px;
+  background: #fbfbf9;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.chat-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.status {
+  font-size: 10px;
+  color: #888;
+}
+
+.chat-messages {
+  min-height: 400px;
+  max-height: 560px;
+  overflow: auto;
+  padding: 24px;
+}
+
+.msg {
+  margin-bottom: 18px;
+  max-width: 78%;
+}
+
+.msg.user {
+  margin-left: auto;
+  text-align: right;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  line-height: 1.65;
+  background: #fff;
+}
+
+.msg.user .bubble {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  padding: 14px;
+  background: #fff;
+}
+
+.chat-input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 12px;
+  background: transparent;
+  color: #111;
+}
+
+.chat-input::placeholder {
+  color: #999;
+}
+
+/* ==================== FOOTER ==================== */
+
+.footer {
+  padding: 75px 0;
+  border-top: 1px solid var(--line);
+  color: #777;
+  font: 11px "DM Mono", monospace;
+}
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 800px) {
+  .container {
+    width: min(var(--max), calc(100% - 30px));
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: 19vw;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-head,
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .project-meta {
+    margin-top: 8px;
+  }
+
+  .project-link {
+    margin-top: 12px;
+  }
+}
+
+/* =========================================================
+   PROJECT CASE STUDY
+   ========================================================= */
+
+   .project-page {
+    min-height: 100vh;
+    padding: 130px 0 120px;
+    background: #fff;
+  }
+  
+  .project-page .container {
+    max-width: 1180px;
+  }
+  
+  /* Back navigation */
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #777;
+  
+    margin-bottom: 80px;
+  
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  .back-link:hover {
+    color: #111;
+    transform: translateX(-5px);
+  }
+  
+  /* =========================================================
+     HERO
+     ========================================================= */
+  
+  .project-hero {
+    padding-bottom: 90px;
+  }
+  
+  .project-hero .section-number {
+    margin-bottom: 25px;
+  }
+  
+  .project-hero h1 {
+    max-width: 1050px;
+  
+    margin: 0;
+  
+    font-size: clamp(52px, 6.2vw, 88px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+    font-weight: 600;
+  
+    color: #111;
+    text-wrap: balance;
+  }
+  
+  /* Project metadata */
+  
+  .project-info {
+    display: grid;
+    grid-template-columns: 220px 220px;
+  
+    gap: 50px;
+  
+    margin-top: 65px;
+    padding-top: 22px;
+  
+    border-top: 1px solid #111;
+  }
+  
+  .project-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .project-info span {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #999;
+  }
+  
+  .project-info strong {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  
+  /* =========================================================
+     CASE STUDY SECTIONS
+     ========================================================= */
+  
+  .case-section {
+    display: grid;
+  
+    grid-template-columns: 220px minmax(0, 1fr);
+  
+    gap: 80px;
+  
+    padding: 85px 0;
+  
+    border-top: 1px solid var(--line);
+  }
+  
+  .case-label {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #888;
+  
+    padding-top: 7px;
+  }
+  
+  .case-content {
+    max-width: 760px;
+  }
+  
+  .case-content h2 {
+    margin: 0 0 28px;
+  
+    font-size: clamp(34px, 4vw, 58px);
+    line-height: 0.98;
+  
+    letter-spacing: -0.055em;
+    font-weight: 600;
+  }
+  
+  .case-lead {
+    margin: 0;
+  
+    font-size: 24px;
+    line-height: 1.6;
+  
+    letter-spacing: -0.02em;
+  
+    color: #333;
+  }
+  
+  .case-placeholder {
+    margin: 0;
+  
+    padding: 22px 25px;
+  
+    border: 1px dashed #d5d5d0;
+    border-radius: 4px;
+  
+    color: #777;
+  
+    font-size: 15px;
+    line-height: 1.8;
+  
+    background: #fafaf8;
+  }
+  
+  /* =========================================================
+     TECHNOLOGIES
+     ========================================================= */
+  
+  .case-tags {
+    display: flex;
+    flex-wrap: wrap;
+  
+    gap: 9px;
+  }
+  
+  .case-tags .skill {
+    background: #fff;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  .case-tags .skill:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+  
+    transform: translateY(-2px);
+  }
+  
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  
+  .case-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding-top: 55px;
+  }
+  
+  /* =========================================================
+     SMALL ACCENT DETAILS
+     ========================================================= */
+  
+  .project-page::selection {
+    background: #111;
+    color: #fff;
+  }
+  
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+  
+  @media (max-width: 800px) {
+  
+    .project-page {
+      padding: 110px 0 80px;
+    }
+  
+    .back-link {
+      margin-bottom: 55px;
+    }
+  
+    .project-hero {
+      padding-bottom: 65px;
+    }
+  
+    .project-hero h1 {
+
+============================================================
+PAGE.TSX
+============================================================
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import ProjectCard from "./components/ProjectCard";
+import DigitalTwin from "./components/DigitalTwin";
+import profile from "../content/generated/profile.json";
+
+const projects = [
+  {
+    number: "01",
+    title: "Data Analytics Projects",
+    description:
+      "Six applied data science and machine learning projects spanning cricket analytics, Mars orbit reconstruction, community detection, genomic sequence analysis, COVID-19 modelling and recommendation systems.",
+    meta: "Data Analytics, IISc Bangalore\nJul 2023 – Dec 2023",
+    tags: [
+      "Data Science",
+      "Machine Learning",
+      "Statistics",
+      "Optimization",
+      "Graph Algorithms",
+    ],
+  },
+
+  {
+    number: "02",
+    title: "Deep Learning with Natural Language Processing",
+    description:
+      "Built deep learning pipelines for sentiment analysis and neural machine translation using LSTMs, encoder-decoder architectures and attention-based sequence modelling.",
+    meta: "DLNLP, IISc Bangalore\nJul 2023 – Dec 2023",
+    tags: [
+      "Deep Learning",
+      "NLP",
+      "PyTorch",
+      "LSTM",
+      "Attention",
+    ],
+  },
+
+  {
+    number: "03",
+    title: "Forecasting with Temporal Knowledge Graphs",
+    description:
+      "Explored temporal Knowledge Graphs for modelling timestamped entity relationships and reasoning over historical event sequences to support forecasting tasks.",
+    meta: "Indian Institute of Science (IISc)\nAug 2023 – Dec 2023",
+    tags: [
+      "Knowledge Graphs",
+      "Temporal Reasoning",
+      "PyTorch",
+      "Machine Learning",
+    ],
+  },
+
+  {
+    number: "04",
+    title:
+      "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
+    description:
+      "Investigated Knowledge Graph-grounded question answering with large language models, benchmarking structured reasoning and retrieval approaches including GreaseLM and UniKGQA.",
+    meta: "SML Lab, IISc / British Telecom\nAug 2023 – Jul 2024",
+    tags: [
+      "LLMs",
+      "Knowledge Graphs",
+      "NLP",
+      "RAG",
+      "PyTorch",
+    ],
+  },
+
+  {
+    number: "05",
+    title: "Optimization in Chip Design with Routing Quality Checker",
+    description:
+      "Developed algorithms to detect degraded routing quality across large multi-layer chip layouts and generate timing-, noise- and DRC-aware routing improvements.",
+    meta: "IBM\nJan 2025 – Mar 2025",
+    tags: [
+      "C++",
+      "Algorithms",
+      "Optimization",
+      "Computational Geometry",
+      "EDA",
+    ],
+  },
+
+  {
+    number: "06",
+    title: "Short Fixing in Chip Design",
+    description:
+      "Designed high-performance geometric algorithms to detect short-circuit violations and perform localized timing-aware rerouting across large-scale chip designs.",
+    meta: "IBM\nAug 2024 – Dec 2024",
+    tags: [
+      "C++",
+      "Routing",
+      "Computational Geometry",
+      "Algorithms",
+      "EDA",
+    ],
+  },
+
+  {
+    number: "07",
+    title: "Free-Hand Routing",
+    description:
+      "Developed an AI-assisted routing workflow that converts designer-drawn routing intent into legal, manufacturable chip wiring while preserving physical-design constraints.",
+    meta: "IBM\nApr 2025 – Jul 2025",
+    tags: [
+      "AI",
+      "Routing",
+      "Computer Vision",
+      "Algorithms",
+      "EDA",
+    ],
+  },
+
+  {
+    number: "08",
+    title:
+      "Optimizing Power Consumption on Smartphones using Machine Learning",
+    description:
+      "Used smartphone sensor time-series data and a Naive Bayes classifier to identify active and inactive usage states for adaptive power-management strategies.",
+    meta: "Samsung R&D Institute India\nFeb 2022 – Apr 2022",
+    tags: [
+      "Machine Learning",
+      "Naive Bayes",
+      "Time Series",
+      "Sensor Data",
+    ],
+  },
+
+  {
+    number: "09",
+    title: "Movie Recommendation System",
+    description:
+      "Built an end-to-end recommendation platform combining content-based and collaborative filtering on MovieLens data, with an interactive Django web interface.",
+    meta: "Aligarh Muslim University\nAug 2021 – Apr 2022",
+    tags: [
+      "Machine Learning",
+      "Recommendation Systems",
+      "Collaborative Filtering",
+      "Django",
+    ],
+  },
+];
+
+export default function Home() {
+  const skills = [
+    ...profile.skills.programming,
+    ...profile.skills.machine_learning,
+    ...profile.skills.systems,
+    ...profile.skills.other,
+  ];
+
+  return (
+    <>
+      <Nav />
+
+      <main>
+        <Hero />
+
+        {/* ==================== WORK ==================== */}
+
+        <section className="section" id="work">
+          <div className="container">
+            <div className="section-head">
+              <div>
+                <div className="section-number">
+                  01 / SELECTED WORK
+                </div>
+
+                <h2>
+                  Things I
+                  <br />
+                  build.
+                </h2>
+              </div>
+
+              <p className="section-intro">
+                Engineering and research projects, presented as
+                technical case studies rather than a conventional
+                resume.
+              </p>
+            </div>
+
+            <div className="projects">
+              {projects.map((project) => (
+                <ProjectCard
+                  key={project.number}
+                  project={project}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== ABOUT ==================== */}
+
+        <section className="section" id="about">
+          <div className="container two-col">
+            <div>
+              <div className="section-number">
+                02 / ABOUT
+              </div>
+
+              <p className="big-text">
+                {profile.about.short}
+              </p>
+            </div>
+
+            <div className="muted">
+              <p>{profile.about.long}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== EDUCATION ==================== */}
+
+        <section className="section" id="education">
+          <div className="container two-col">
+            <div>
+              <div className="section-number">
+                03 / EDUCATION
+              </div>
+
+              <h2>
+                Where I
+                <br />
+                learned.
+              </h2>
+            </div>
+
+            <div className="timeline">
+              {profile.education.map((education, index) => (
+                <div
+                  className="timeline-item"
+                  key={`${education.institution}-${index}`}
+                >
+                  <div className="date">
+                    {education.start_year} — {education.end_year}
+                  </div>
+
+                  <h3>{education.degree}</h3>
+
+                  <p className="muted">
+                    {education.institution}
+                  </p>
+
+                  {education.field && (
+                    <p className="muted">
+                      {education.field}
+                    </p>
+                  )}
+
+                  {education.description && (
+                    <p className="muted">
+                      {education.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== RESEARCH ==================== */}
+
+        <section className="section" id="research">
+          <div className="container two-col">
+            <div>
+              <div className="section-number">
+                04 / RESEARCH
+              </div>
+
+              <h2>
+                Research
+                <br />
+                & ideas.
+              </h2>
+            </div>
+
+            <div className="muted">
+              {profile.research.map((item, index) => (
+                <div
+                  key={`${item.title}-${index}`}
+                  className="research-item"
+                >
+                  <h3>{item.title}</h3>
+
+                  <p>{item.description}</p>
+
+                  <p>
+                    {item.organization} · {item.year}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== EXPERIENCE ==================== */}
+
+        <section className="section" id="experience">
+          <div className="container two-col">
+            <div>
+              <div className="section-number">
+                05 / EXPERIENCE
+              </div>
+
+              <h2>
+                Where I’ve
+                <br />
+                worked.
+              </h2>
+            </div>
+
+            <div className="timeline">
+              {profile.experience.map((job, index) => (
+                <div
+                  className="timeline-item"
+                  key={`${job.company}-${index}`}
+                >
+                  <div className="date">
+                    {job.start} — {job.end}
+                  </div>
+
+                  <h3>
+                    {job.company} — {job.role}
+                  </h3>
+
+                  <p className="muted">
+                    {job.description}
+                  </p>
+
+                  {job.skills && job.skills.length > 0 && (
+                    <div className="skills">
+                      {job.skills.map((skill, skillIndex) => (
+                        <span
+                          className="skill"
+                          key={`${skill}-${skillIndex}`}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== SKILLS ==================== */}
+
+        <section className="section" id="skills">
+          <div className="container">
+            <div className="section-number">
+              06 / SKILLS
+            </div>
+
+            <h2>
+              Tools of
+              <br />
+              the trade.
+            </h2>
+
+            <div className="skills">
+              {skills.map((skill, skillIndex) => (
+                <span
+                  className="skill"
+                  key={`${skill}-${skillIndex}`}
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== DIGITAL TWIN ==================== */}
+
+        <section className="section" id="twin">
+          <div className="container">
+            <div className="section-head">
+              <div>
+                <div className="section-number">
+                  07 / DIGITAL TWIN
+                </div>
+
+                <h2>
+                  Talk to
+                  <br />
+                  <em>Jayant AI.</em>
+                </h2>
+              </div>
+
+              <p className="section-intro">
+                Ask questions about Jayant’s work,
+                research, education and technical
+                interests.
+              </p>
+            </div>
+
+            <DigitalTwin />
+          </div>
+        </section>
+      </main>
+
+      {/* ==================== FOOTER ==================== */}
+
+      <footer className="footer">
+        <div className="container">
+          © 2026 Jayant Singh · Interactive technical
+          portfolio.
+        </div>
+      </footer>
+    </>
+  );
+}
+============================================================
+HERO.TSX
+============================================================
+import { ArrowDown, MessageCircle } from "lucide-react";
+
+import profile from "../../content/generated/profile.json";
+
+export default function Hero() {
+  const nameParts = profile.personal.name.trim().split(" ");
+
+  const firstName = nameParts[0] || "Jayant";
+  const lastName = nameParts.slice(1).join(" ") || "Singh";
+
+  return (
+    <section className="hero">
+      <div className="container">
+
+        <div className="kicker">
+          {profile.personal.headline}
+        </div>
+
+        <h1>
+          {firstName}
+          <br />
+          <em>{lastName}.</em>
+        </h1>
+
+        <p className="hero-copy">
+          {profile.about.short}
+        </p>
+
+        <div className="actions">
+          <a className="btn" href="#work">
+            Explore my work
+            <ArrowDown size={15} />
+          </a>
+
+          <a className="btn secondary" href="#twin">
+            Talk to my AI
+            <MessageCircle size={15} />
+          </a>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+============================================================
+NAV.TSX
+============================================================
+export default function Nav(){return <nav className="nav"><div className="container nav-inner">
+<a href="#" className="logo">JAYANT / SINGH</a>
+<div className="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#twin">Digital Twin</a></div>
+</div></nav>}
+============================================================
+PROJECTCARD.TSX
+============================================================
+type Project = {
+    number: string;
+    title: string;
+    description: string;
+    meta: string;
+    tags: string[];
+  };
+  
+  const BASE_PATH = "/Digital_twin_chatbot_and_portfolio";
+  
+  function slugify(text: string) {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+  
+  export default function ProjectCard({
+    project,
+  }: {
+    project: Project;
+  }) {
+    const slug = slugify(project.title);
+  
+    return (
+      <a
+        href={`${BASE_PATH}/projects/${slug}/`}
+        className="project"
+        aria-label={`View case study: ${project.title}`}
+      >
+        <div className="project-num">
+          {project.number}
+        </div>
+  
+        <div>
+          <h3>{project.title}</h3>
+  
+          <p>{project.description}</p>
+  
+          <div className="tags">
+            {project.tags.map((tag, index) => (
+              <span
+                className="tag"
+                key={`${tag}-${index}`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+  
+        <div className="project-meta">
+          {project.meta.split("\n").map((line, index) => (
+            <div key={`${line}-${index}`}>
+              {line}
+            </div>
+          ))}
+  
+          <div className="project-link">
+            VIEW CASE STUDY →
+          </div>
+        </div>
+      </a>
+    );
+  }
+============================================================
+PROJECT DETAIL PAGE
+============================================================
+import { notFound } from "next/navigation";
+
+type SubProject = {
+  title: string;
+  problem: string;
+  dataset: string;
+  approach: string;
+  results: string;
+  technologies: string[];
+};
+
+type Project = {
+  name: string;
+  period: string;
+  organization: string;
+  description: string;
+  problem?: string;
+  approach?: string;
+  results?: string;
+  technologies: string[];
+  links: string[];
+  subprojects?: SubProject[];
+};
+
+const projects: Project[] = [
+  {
+    name: "Data Analytics Projects",
+    period: "Jul 2023 – Dec 2023",
+    organization: "Data Analytics, IISc Bangalore",
+    description:
+      "A collection of end-to-end data analysis and machine learning projects spanning sports analytics, astronomy, graph mining, genomics, epidemiological modelling and recommendation systems.",
+    technologies: [
+      "Python",
+      "Data Analytics",
+      "Statistics",
+      "Machine Learning",
+      "Numerical Optimization",
+      "Graph Algorithms",
+      "Linear Algebra",
+    ],
+    links: [],
+    subprojects: [
+      {
+        title: "Duckworth–Lewis Cricket Resource Modelling",
+        problem:
+          "Model how batting resources change as overs and wickets are consumed in an ODI innings, and derive a resource-percentage table similar to the Duckworth–Lewis methodology used for rain-affected matches.",
+        dataset:
+          "Ball-by-ball ODI cricket data from 1999–2011 containing innings information, overs, wickets in hand, runs, total overs and data-quality flags.",
+        approach:
+          "Cleaned the dataset, derived overs remaining and focused on first-innings data. Explored relationships between wickets, overs and runs remaining using statistical visualizations. Compared multiple numerical optimization strategies before fitting a joint run-production model across all wicket states. The final model used the function Z × (1 − exp(−L × overs_remaining / Z)) with ten wicket-specific Z parameters and a shared slope parameter L, optimized using L-BFGS-B.",
+        results:
+          "Generated resource-remaining curves for all wicket levels by normalizing the fitted run-production functions against the maximum achievable score. This produced a Duckworth–Lewis-style resource table showing how available batting resources decrease with lost overs and wickets.",
+        technologies: [
+          "Python",
+          "SciPy",
+          "L-BFGS-B",
+          "Numerical Optimization",
+          "Statistical Modelling",
+        ],
+      },
+
+      {
+        title: "Mars Orbit Reconstruction",
+        problem:
+          "Reconstruct the orbit of Mars from historical opposition observations by fitting a geometric orbital model whose predicted longitudes closely match the recorded measurements.",
+        dataset:
+          "Twelve historical Mars opposition observations containing date/time information and geocentric longitude measurements.",
+        approach:
+          "Converted the historical observations into continuous time and longitude representations. Implemented a geometric Mars equant model containing orbit radius, orbit-centre direction, equant position and mean angular motion. Used coordinate-wise grid search to obtain strong initial parameter estimates and then refined them using Nelder–Mead optimization.",
+        results:
+          "The optimized model achieved a maximum angular error of approximately 0.0726°, demonstrating that the geometric construction could closely reproduce the historical Mars observations.",
+        technologies: [
+          "Python",
+          "SciPy",
+          "Nelder-Mead",
+          "Numerical Optimization",
+          "Computational Geometry",
+        ],
+      },
+
+      {
+        title:
+          "Community Detection in Graphs — Spectral Clustering & Louvain",
+        problem:
+          "Identify natural communities within large network datasets and compare classical graph-partitioning approaches in terms of clustering behaviour and computational cost.",
+        dataset:
+          "A Facebook ego-network represented as an undirected graph and the Bitcoin-OTC trust network represented using weighted trust relationships.",
+        approach:
+          "Implemented recursive spectral clustering using the Fiedler vector of the graph Laplacian to repeatedly partition graphs into communities. Also implemented Louvain-style modularity optimization that greedily moves nodes between neighbouring communities to increase modularity. Community structure was inspected using reordered adjacency matrices and graph visualizations.",
+        results:
+          "Spectral clustering produced clear recursive graph partitions but required expensive eigenvector computation. Louvain-style optimization scaled more effectively and progressively merged thousands of initial communities into a much smaller set of meaningful groups.",
+        technologies: [
+          "Python",
+          "Graph Algorithms",
+          "Spectral Clustering",
+          "Louvain",
+          "Linear Algebra",
+          "Network Analysis",
+        ],
+      },
+
+      {
+        title: "Genomic Read Alignment for Colour-Blindness Diagnosis",
+        problem:
+          "Infer the genetic configuration associated with red-green colour blindness by aligning short DNA sequencing reads against red and green opsin gene regions on chromosome X.",
+        dataset:
+          "Short DNA reads, chromosome-X reference information, a Burrows-Wheeler Transform representation and known exon coordinate ranges for red and green opsin genes.",
+        approach:
+          "Built an FM-index using the Burrows-Wheeler Transform, rank tables and first-occurrence information. Implemented backward-search based read alignment supporting exact matching and up to two mismatches, including reverse-complement matching. Candidate alignments were mapped to red and green exon regions and used to compute exon-level red/green coverage ratios.",
+        results:
+          "The observed exon coverage ratios were compared against four known gene-configuration templates using Euclidean distance. The closest match corresponded to Configuration 2.",
+        technologies: [
+          "Python",
+          "FM-Index",
+          "Burrows-Wheeler Transform",
+          "String Algorithms",
+          "Bioinformatics",
+        ],
+      },
+
+      {
+        title: "COVID-19 SEIRV Epidemic Modelling & Control",
+        problem:
+          "Fit an epidemiological model to observed COVID-19 case data and study how different transmission-control policies affect the progression of infections.",
+        dataset:
+          "Daily national COVID-19 data including confirmed cases, testing counts and first-dose vaccination counts from March 2021 onward.",
+        approach:
+          "Implemented an SEIRV compartmental model representing Susceptible, Exposed, Infected, Recovered and Vaccinated populations. Model parameters were fitted using coordinate-wise gradient descent. After fitting, simulated fixed transmission-reduction strategies using open-loop control and an adaptive closed-loop strategy in which transmission reduction changed according to current infection levels.",
+        results:
+          "The simulations demonstrated the trade-off between fixed intervention levels and adaptive policies. The closed-loop strategy substantially flattened infection peaks by dynamically reducing transmission as case counts increased.",
+        technologies: [
+          "Python",
+          "SEIRV",
+          "Epidemiological Modelling",
+          "Gradient Descent",
+          "Control Systems",
+        ],
+      },
+
+      {
+        title:
+          "Movie Recommendation System — SVD, CUR & Matrix Factorization",
+        problem:
+          "Compare multiple matrix-decomposition approaches for collaborative-filtering recommendation and study the trade-off between reconstruction quality and computational cost.",
+        dataset:
+          "MovieLens ratings data represented as a user × movie rating matrix.",
+        approach:
+          "Implemented Singular Value Decomposition, CUR decomposition and gradient-based latent-factor matrix factorization. SVD reconstruction quality was evaluated across different retained ranks. CUR used probability-based row and column sampling with a pseudoinverse of the intersection matrix. The latent-factor approach used stochastic gradient descent with regularization on an 80/20 train-test split.",
+        results:
+          "The matrix-factorization approach achieved a training error of approximately 0.663 and test error of approximately 0.91. A 30-factor model required around 1.2 hours to converge, while much larger latent-factor models improved reconstruction quality at significantly higher computational cost.",
+        technologies: [
+          "Python",
+          "SVD",
+          "CUR Decomposition",
+          "Matrix Factorization",
+          "Recommendation Systems",
+          "Collaborative Filtering",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "Deep Learning with Natural Language Processing",
+    period: "Jul 2023 – Dec 2023",
+    organization: "DLNLP, IISc Bangalore",
+    description:
+      "Deep learning and NLP projects exploring sequence modelling, sentiment analysis and neural machine translation.",
+    problem:
+      "The projects focused on learning useful representations from sequential textual data. One task involved predicting sentiment from large-scale review text, while another required converting dates written in different textual formats into a single standardized representation.",
+    approach:
+      "For sentiment analysis, used recurrent neural networks with LSTM units to capture long-range dependencies in textual reviews. For date normalization, developed an encoder-decoder neural machine translation architecture with an attention mechanism to learn mappings between variable input date formats and a unified output representation.",
+    results:
+      "Implemented complete deep-learning pipelines for text preprocessing, sequence modelling, training and evaluation. The work provided practical experience with LSTMs, encoder-decoder architectures and attention-based sequence-to-sequence learning.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "NLP",
+      "LSTM",
+      "Encoder-Decoder",
+      "Machine Translation",
+      "Attention",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Forecasting with Temporal Knowledge Graphs",
+    period: "Aug 2023 – Dec 2023",
+    organization: "Indian Institute of Science (IISc)",
+    description:
+      "Research project exploring temporal Knowledge Graphs in which event timestamps are associated with entity relationships, enabling reasoning and forecasting over time.",
+    problem:
+      "Traditional Knowledge Graphs represent relationships between entities but usually do not explicitly model how those relationships evolve over time. The project explored how temporal information can be incorporated into structured knowledge representations for forecasting future events.",
+    approach:
+      "Studied Temporal Knowledge Graph representations and reasoning techniques in which timestamped relationships are used to model evolving interactions between entities. Explored temporal reasoning and forecasting over historical event sequences.",
+    results:
+      "Developed practical experience with temporal Knowledge Graph modelling and with using structured historical relationships for reasoning and forecasting tasks.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Knowledge Graphs",
+      "Temporal Reasoning",
+    ],
+    links: [],
+  },
+
+  {
+    name:
+      "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
+    period: "Aug 2023 – Jul 2024",
+    organization: "SML Lab, IISc / British Telecom",
+    description:
+      "Collaborative research on improving question answering with large language models through Knowledge Graph integration and structured knowledge grounding.",
+    problem:
+      "Large language models can generate fluent answers while still producing incorrect or unsupported information. The research investigated whether structured Knowledge Graph information could improve reasoning and provide more reliable grounding for question answering.",
+    approach:
+      "Experimented with Knowledge Graph-based question-answering architectures and retrieval strategies. Benchmarked approaches including GreaseLM and UniKGQA and explored hybrid neural-symbolic methods combining language models with structured knowledge.",
+    results:
+      "Evaluated Knowledge Graph-assisted question-answering approaches across benchmark datasets and studied how structured grounding can complement language-model reasoning.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Knowledge Graphs",
+      "LLMs",
+      "RAG",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Optimization in Chip Design with Routing Quality Checker",
+    period: "Jan 2025 – Mar 2025",
+    organization: "IBM",
+    description:
+      "Developed routing-quality analysis and optimization infrastructure for large-scale chip layouts, focusing on detecting degraded routing and generating timing- and noise-aware fixes.",
+    problem:
+      "Modern chip layouts contain millions of multi-layer routing geometries. A routing modification that resolves one issue can introduce timing degradation, noise problems or new design-rule violations elsewhere. The challenge was to identify poor routing and improve it while preserving overall design quality.",
+    approach:
+      "Developed infrastructure to identify routing-quality degradation across complex multi-layer geometries. Candidate routing improvements were evaluated using geometric and routing constraints while considering timing and noise impact. The work combined computational geometry, routing algorithms and optimization strategies.",
+    results:
+      "Built routing-quality analysis and fix-up infrastructure capable of supporting automated improvements while maintaining design constraints and minimizing secondary routing degradation.",
+    technologies: [
+      "C++",
+      "Computational Geometry",
+      "Algorithms",
+      "Optimization",
+      "EDA",
+      "Routing",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Short Fixing in Chip Design",
+    period: "Aug 2024 – Dec 2024",
+    organization: "IBM",
+    description:
+      "Developed high-performance algorithms to detect and repair short-circuit violations across large-scale multi-layer chip layouts.",
+    problem:
+      "Chip layouts contain millions of routing geometries distributed across many metal layers. Short-circuit violations must be detected efficiently and repaired without introducing new shorts, opens, timing degradation or additional design-rule violations.",
+    approach:
+      "Developed a high-performance 3D sweep-line based approach for detecting short-circuit violations across routing geometries. Built a timing-aware rerouting workflow that selectively modifies affected routing while preserving surrounding topology and design constraints.",
+    results:
+      "Created an automated workflow for identifying and repairing routing shorts at scale while minimizing secondary violations and unnecessary routing changes.",
+    technologies: [
+      "C++",
+      "Algorithms",
+      "Computational Geometry",
+      "Optimization",
+      "EDA",
+      "Routing",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Free-Hand Routing",
+    period: "Apr 2025 – Jul 2025",
+    organization: "IBM",
+    description:
+      "Developed a routing paradigm that allows designers to sketch desired routing topologies while the system translates the sketch into legal, manufacturable chip wiring.",
+    problem:
+      "Traditional routing tools provide limited ways for designers to communicate high-level routing intent. Manually constructing an exact topology can be cumbersome, particularly when designers already know approximately how they want a connection to be routed.",
+    approach:
+      "Designed a workflow in which a designer provides a free-hand routing sketch representing the desired topology. The system interprets the sketch, maps it onto the chip layout and generates routing that satisfies connectivity and physical-design constraints.",
+    results:
+      "Developed a system that bridges human routing intent and automated physical-design generation, reducing manual effort while still producing manufacturable routing. A patent was filed around the core methodology and implementation.",
+    technologies: [
+      "AI",
+      "Computer Vision",
+      "Algorithms",
+      "Routing",
+      "EDA",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Optimizing Power Consumption on Smartphones using Machine Learning",
+    period: "Feb 2022 – Apr 2022",
+    organization: "Samsung R&D Institute India",
+    description:
+      "Used smartphone sensor data and machine learning to infer device usage states that could support adaptive power-management decisions.",
+    problem:
+      "Smartphone sensors and background components may remain active even during periods of limited user interaction. Detecting whether the device is actively being used can provide useful signals for reducing unnecessary power consumption.",
+    approach:
+      "Collected and processed time-series data from smartphone sensors including ambient light, gyroscope and accelerometer readings. Extracted usage-related patterns and trained a Naive Bayes classifier to distinguish active and inactive device states.",
+    results:
+      "Built a sensor-based usage-state classification pipeline that could serve as an input to adaptive power-management strategies aimed at improving smartphone energy efficiency.",
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Naive Bayes",
+      "Time-Series Data",
+      "Sensor Data",
+      "Data Analysis",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Movie Recommendation System",
+    period: "Aug 2021 – Apr 2022",
+    organization: "Aligarh Muslim University",
+    description:
+      "Built an end-to-end movie recommendation system combining content-based and collaborative-filtering techniques and exposed the recommendations through a web application.",
+    problem:
+      "Recommendation systems must infer user preferences from incomplete interaction data while dealing with challenges such as sparse ratings, cold-start users or movies and ambiguity in movie search.",
+    approach:
+      "Used MovieLens data to build both content-based and collaborative-filtering recommendation components. Combined similarity-based recommendation with user-rating information and integrated the system into an interactive Django web application.",
+    results:
+      "Developed a complete recommendation pipeline from dataset preprocessing and recommendation logic through to an interactive web interface.",
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Recommendation Systems",
+      "Collaborative Filtering",
+      "Django",
+    ],
+    links: [],
+  },
+];
+
+function slugify(text: string) {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: slugify(project.name),
+  }));
+}
+
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const project = projects.find(
+    (item) => slugify(item.name) === slug
+  );
+
+  if (!project) {
+    notFound();
+  }
+
+  return (
+    <main className="project-page">
+      <div className="container">
+        <a
+          href="/Digital_twin_chatbot_and_portfolio/#work"
+          className="back-link"
+        >
+          ← BACK TO SELECTED WORK
+        </a>
+
+        <header className="project-hero">
+          <div className="section-number">
+            PROJECT / CASE STUDY
+          </div>
+
+          <h1>{project.name}</h1>
+
+          <div className="project-info">
+            <div>
+              <span>ORGANIZATION</span>
+              <strong>{project.organization}</strong>
+            </div>
+
+            <div>
+              <span>PERIOD</span>
+              <strong>{project.period}</strong>
+            </div>
+          </div>
+        </header>
+
+        <section className="case-section">
+          <div className="case-label">
+            01 / OVERVIEW
+          </div>
+
+          <div className="case-content">
+            <p className="case-lead">
+              {project.description}
+            </p>
+          </div>
+        </section>
+
+        {project.subprojects ? (
+          <section className="case-section">
+            <div className="case-label">
+              02 / PROJECTS
+            </div>
+
+            <div className="case-content">
+              <h2>Individual Projects</h2>
+
+              <div className="analytics-project-grid">
+                {project.subprojects.map(
+                  (subproject, index) => (
+                    <article
+                      className="analytics-project-card"
+                      key={subproject.title}
+                    >
+                      <div className="analytics-project-number">
+                        {String(index + 1).padStart(2, "0")}
+                      </div>
+
+                      <h3>{subproject.title}</h3>
+
+                      <div className="analytics-project-section">
+                        <span>PROBLEM</span>
+                        <p>{subproject.problem}</p>
+                      </div>
+
+                      <div className="analytics-project-section">
+                        <span>DATASET</span>
+                        <p>{subproject.dataset}</p>
+                      </div>
+
+                      <div className="analytics-project-section">
+                        <span>APPROACH</span>
+                        <p>{subproject.approach}</p>
+                      </div>
+
+                      <div className="analytics-project-section">
+                        <span>RESULTS</span>
+                        <p>{subproject.results}</p>
+                      </div>
+
+                      <div className="case-tags">
+                        {subproject.technologies.map(
+                          (technology) => (
+                            <span
+                              className="skill"
+                              key={technology}
+                            >
+                              {technology}
+                            </span>
+                          )
+                        )}
+                      </div>
+                    </article>
+                  )
+                )}
+              </div>
+            </div>
+          </section>
+        ) : (
+          <>
+            <section className="case-section">
+              <div className="case-label">
+                02 / THE PROBLEM
+              </div>
+
+              <div className="case-content">
+                <h2>
+                  What problem was I trying to solve?
+                </h2>
+
+                <p>{project.problem}</p>
+              </div>
+            </section>
+
+            <section className="case-section">
+              <div className="case-label">
+                03 / APPROACH
+              </div>
+
+              <div className="case-content">
+                <h2>How did I approach it?</h2>
+
+                <p>{project.approach}</p>
+              </div>
+            </section>
+
+            <section className="case-section">
+              <div className="case-label">
+                04 / RESULTS
+              </div>
+
+              <div className="case-content">
+                <h2>What did I achieve?</h2>
+
+                <p>{project.results}</p>
+              </div>
+            </section>
+          </>
+        )}
+
+        <section className="case-section">
+          <div className="case-label">
+            {project.subprojects
+              ? "03 / TECHNOLOGIES"
+              : "05 / TECHNOLOGIES"}
+          </div>
+
+          <div className="case-content">
+            <div className="case-tags">
+              {project.technologies.map(
+                (technology, index) => (
+                  <span
+                    className="skill"
+                    key={`${technology}-${index}`}
+                  >
+                    {technology}
+                  </span>
+                )
+              )}
+            </div>
+          </div>
+        </section>
+
+        <div className="case-footer">
+          <a
+            href="/Digital_twin_chatbot_and_portfolio/#work"
+            className="btn"
+          >
+            ← BACK TO WORK
+          </a>
+        </div>
+      </div>
+    </main>
+  );
+}
+============================================================
+LAYOUT.TSX
+============================================================
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Jayant Singh — AI × Algorithms × Systems",
+  description: "Interactive portfolio and AI digital twin of Jayant Singh."
+};
+
+export default function RootLayout({children}:{children:React.ReactNode}) {
+  return <html lang="en"><body>{children}</body></html>;
+}
+
+============================================================
+NEXT.CONFIG.TS
+============================================================
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
+
+  // GitHub Pages repository path
+  basePath: "/Digital_twin_chatbot_and_portfolio",
+
+  // Ensures static assets are resolved correctly
+  assetPrefix: "/Digital_twin_chatbot_and_portfolio/",
+
+  images: {
+    unoptimized: true,
+  },
+
+  trailingSlash: true,
+};
+
+export default nextConfig;

@@ -1,0 +1,141 @@
+        problem:
+          "Infer the genetic configuration associated with red-green colour blindness by aligning short DNA sequencing reads against red and green opsin gene regions on chromosome X.",
+  
+        dataset:
+          "Short DNA reads, chromosome-X reference information, a Burrows-Wheeler Transform representation and known exon coordinate ranges for red and green opsin genes.",
+  
+        approach:
+          "Built an FM-index using the Burrows-Wheeler Transform, rank tables and first-occurrence information. Implemented backward-search based read alignment supporting exact matching and up to two mismatches, including reverse-complement matching. Candidate alignments were mapped to red and green exon regions and used to compute exon-level red/green coverage ratios.",
+  
+        results:
+          "The observed exon coverage ratios were compared against four known gene-configuration templates using Euclidean distance. The closest match corresponded to Configuration 2.",
+  
+        technologies: [
+          "Python",
+          "FM-Index",
+          "Burrows-Wheeler Transform",
+          "String Algorithms",
+          "Bioinformatics",
+        ],
+      },
+  
+      {
+        title: "COVID-19 SEIRV Epidemic Modelling & Control",
+  
+        problem:
+          "Fit an epidemiological model to observed COVID-19 case data and study how different transmission-control policies affect the progression of infections.",
+  
+        dataset:
+          "Daily national COVID-19 data including confirmed cases, testing counts and first-dose vaccination counts from March 2021 onward.",
+  
+        approach:
+          "Implemented an SEIRV compartmental model representing Susceptible, Exposed, Infected, Recovered and Vaccinated populations. Model parameters were fitted using coordinate-wise gradient descent. After fitting, simulated fixed transmission-reduction strategies using open-loop control and an adaptive closed-loop strategy in which transmission reduction changed according to current infection levels.",
+  
+        results:
+          "The simulations demonstrated the trade-off between fixed intervention levels and adaptive policies. The closed-loop strategy substantially flattened infection peaks by dynamically reducing transmission as case counts increased.",
+  
+        technologies: [
+          "Python",
+          "SEIRV",
+          "Epidemiological Modelling",
+          "Gradient Descent",
+          "Control Systems",
+        ],
+      },
+  
+      {
+        title: "Movie Recommendation System — SVD, CUR & Matrix Factorization",
+  
+        problem:
+          "Compare multiple matrix-decomposition approaches for collaborative-filtering recommendation and study the trade-off between reconstruction quality and computational cost.",
+  
+        dataset:
+          "MovieLens ratings data represented as a user × movie rating matrix.",
+  
+        approach:
+          "Implemented Singular Value Decomposition, CUR decomposition and gradient-based latent-factor matrix factorization. SVD reconstruction quality was evaluated across different retained ranks. CUR used probability-based row and column sampling with a pseudoinverse of the intersection matrix. The latent-factor approach used stochastic gradient descent with regularization on an 80/20 train-test split.",
+  
+        results:
+          "The matrix-factorization approach achieved a training error of approximately 0.663 and test error of approximately 0.91. A 30-factor model required around 1.2 hours to converge, while much larger latent-factor models improved reconstruction quality at significantly higher computational cost.",
+  
+        technologies: [
+          "Python",
+          "SVD",
+          "CUR Decomposition",
+          "Matrix Factorization",
+          "Recommendation Systems",
+          "Collaborative Filtering",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "Deep Learning with Natural Language Processing",
+    period: "Jul 2023 – Dec 2023",
+    organization: "DLNLP, IISc Bangalore",
+    description:
+      "Deep learning and NLP projects exploring sequence modelling, sentiment analysis and neural machine translation.",
+    problem:
+      "The projects focused on learning useful representations from sequential textual data. One task involved predicting sentiment from large-scale review text, while another required converting dates written in different textual formats into a single standardized representation.",
+    approach:
+      "For sentiment analysis, used recurrent neural networks with LSTM units to capture long-range dependencies in textual reviews. For date normalization, developed an encoder-decoder neural machine translation architecture with an attention mechanism to learn mappings between variable input date formats and a unified output representation.",
+    results:
+      "Implemented complete deep-learning pipelines for text preprocessing, sequence modelling, training and evaluation. The work provided practical experience with LSTMs, encoder-decoder architectures and attention-based sequence-to-sequence learning.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "NLP",
+      "LSTM",
+      "Encoder-Decoder",
+      "Machine Translation",
+      "Attention",
+    ],
+    links: [],
+  },
+
+  {
+    name: "Forecasting with Temporal Knowledge Graphs",
+    period: "Aug 2023 – Dec 2023",
+    organization: "Indian Institute of Science (IISc)",
+    description:
+      "Research project exploring temporal Knowledge Graphs in which event timestamps are associated with entity relationships, enabling reasoning and forecasting over time.",
+    problem:
+      "Traditional Knowledge Graphs represent relationships between entities but usually do not explicitly model how those relationships evolve over time. The project explored how temporal information can be incorporated into structured knowledge representations for forecasting future events.",
+    approach:
+      "Studied Temporal Knowledge Graph representations and reasoning techniques in which timestamped relationships are used to model evolving interactions between entities. Explored temporal reasoning and forecasting over historical event sequences.",
+    results:
+      "Developed a stronger understanding of temporal Knowledge Graph modelling and how structured historical relationships can be used for reasoning and forecasting tasks.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Knowledge Graphs",
+      "Temporal Reasoning",
+    ],
+    links: [],
+  },
+
+  {
+    name:
+      "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
+    period: "Aug 2023 – Jul 2024",
+    organization: "SML Lab, IISc / British Telecom",
+    description:
+      "Collaborative research on improving question answering with large language models through Knowledge Graph integration and structured knowledge grounding.",
+    problem:
+      "Large language models can generate fluent answers while still producing incorrect or unsupported information. The research investigated whether structured Knowledge Graph information could improve reasoning and provide more reliable grounding for question answering.",
+    approach:
+      "Experimented with Knowledge Graph-based question-answering architectures and retrieval strategies. Benchmarked approaches including GreaseLM and UniKGQA and explored hybrid neural-symbolic methods combining language models with structured knowledge.",
+    results:
+      "Evaluated Knowledge Graph-assisted question-answering approaches across benchmark datasets and studied how structured grounding can complement language-model reasoning.",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Knowledge Graphs",
+      "LLMs",
+      "RAG",
+    ],
+    links: [],
+  },

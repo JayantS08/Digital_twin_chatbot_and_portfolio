@@ -1,4 +1,8 @@
-import { ArrowDown, MessageCircle } from "lucide-react";
+import {
+  ArrowDownRight,
+  MessageCircle,
+  Sparkles,
+} from "lucide-react";
 
 import profile from "../../content/generated/profile.json";
 
@@ -10,34 +14,77 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <div className="container">
+      <div className="hero-grid-bg" />
 
-        <div className="kicker">
-          {profile.personal.headline}
+      <div className="container hero-inner">
+        <div className="hero-topline">
+          <div className="hero-kicker-group">
+            <span className="hero-dot" />
+
+            <span className="kicker">
+              {profile.personal.headline}
+            </span>
+          </div>
+
+          <div className="hero-top-meta">
+            MACHINE LEARNING · LLMs · SYSTEMS
+          </div>
         </div>
 
-        <h1>
-          {firstName}
-          <br />
-          <em>{lastName}.</em>
-        </h1>
+        <div className="hero-name-wrap">
+          <h1>
+            <span>{firstName}</span>
+            <br />
+            <em>{lastName}.</em>
+          </h1>
 
-        <p className="hero-copy">
-          {profile.about.short}
-        </p>
+          <div className="hero-side-note">
+            <Sparkles size={16} />
 
-        <div className="actions">
-          <a className="btn" href="#work">
-            Explore my work
-            <ArrowDown size={15} />
-          </a>
-
-          <a className="btn secondary" href="#twin">
-            Talk to my AI
-            <MessageCircle size={15} />
-          </a>
+            <p>
+              Building intelligent systems at the intersection of
+              machine learning, structured knowledge and
+              performance-critical engineering.
+            </p>
+          </div>
         </div>
 
+        <div className="hero-bottom">
+          <div className="hero-intro">
+            <p className="hero-copy">
+              {profile.about.short}
+            </p>
+
+            <div className="actions">
+              <a className="btn" href="#work">
+                Explore selected work
+                <ArrowDownRight size={16} />
+              </a>
+
+              <a className="btn secondary" href="#twin">
+                Talk to Jayant AI
+                <MessageCircle size={16} />
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-stats">
+            <div className="hero-stat">
+              <span>FOCUS</span>
+              <strong>ML / AI</strong>
+            </div>
+
+            <div className="hero-stat">
+              <span>RESEARCH</span>
+              <strong>IISc · SML Lab</strong>
+            </div>
+
+            <div className="hero-stat">
+              <span>ENGINEERING</span>
+              <strong>Algorithms · Systems</strong>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
