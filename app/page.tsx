@@ -22,21 +22,36 @@ const projects = [
 
   {
     number: "02",
-    title: "Deep Learning with Natural Language Processing",
+    title: "AI-Assisted Stock Trader",
     description:
-      "Built deep learning pipelines for sentiment analysis and neural machine translation using LSTMs, encoder-decoder architectures and attention-based sequence modelling.",
-    meta: "DLNLP, IISc Bangalore\nJul 2023 – Dec 2023",
+      "Autonomous paper-trading system for Indian equities (NSE) combining GPT-4o-mini signal generation, 20+ technical indicators, live news sentiment analysis and realistic Zerodha-model transaction cost simulation.",
+    meta: "Personal Project\n2025",
     tags: [
-      "Deep Learning",
-      "NLP",
-      "PyTorch",
-      "LSTM",
-      "Attention",
+      "AI",
+      "LLMs",
+      "Python",
+      "Finance",
+      "Autonomous Agents",
     ],
   },
 
   {
     number: "03",
+    title: "AI Job Hunter",
+    description:
+      "Agentic job-search pipeline that discovers employers from public ATS feeds, ranks openings against a structured candidate profile with explainable scores, and generates fact-checked, tailored LaTeX résumés and Gmail drafts — nothing sent without approval.",
+    meta: "Personal Project\n2025",
+    tags: [
+      "Agentic AI",
+      "LLMs",
+      "Python",
+      "Gemini",
+      "Automation",
+    ],
+  },
+
+  {
+    number: "04",
     title:
       "Knowledge Graph Reasoning and Knowledge Graph-Based Question Answering",
     description:
@@ -52,37 +67,7 @@ const projects = [
   },
 
   {
-    number: "04",
-    title: "Optimization in Chip Design with Routing Quality Checker",
-    description:
-      "Developed algorithms to detect degraded routing quality across large multi-layer chip layouts and generate timing-, noise- and DRC-aware routing improvements.",
-    meta: "IBM\nJan 2025 – Mar 2025",
-    tags: [
-      "C++",
-      "Algorithms",
-      "Optimization",
-      "Computational Geometry",
-      "EDA",
-    ],
-  },
-
-  {
     number: "05",
-    title: "Short Fixing in Chip Design",
-    description:
-      "Designed high-performance geometric algorithms to detect short-circuit violations and perform localized timing-aware rerouting across large-scale chip designs.",
-    meta: "IBM\nAug 2024 – Dec 2024",
-    tags: [
-      "C++",
-      "Routing",
-      "Computational Geometry",
-      "Algorithms",
-      "EDA",
-    ],
-  },
-
-  {
-    number: "06",
     title: "Free-Hand Routing",
     description:
       "Developed an AI-assisted routing workflow that converts designer-drawn routing intent into legal, manufacturable chip wiring while preserving physical-design constraints.",
@@ -97,7 +82,52 @@ const projects = [
   },
 
   {
+    number: "06",
+    title: "Short Fixing in Chip Design",
+    description:
+      "Designed high-performance geometric algorithms to detect short-circuit violations and perform localized timing-aware rerouting across large-scale chip designs.",
+    meta: "IBM\nAug 2024 – Dec 2024",
+    tags: [
+      "C++",
+      "Routing",
+      "Computational Geometry",
+      "Algorithms",
+      "EDA",
+    ],
+  },
+
+  {
     number: "07",
+    title: "Optimization in Chip Design with Routing Quality Checker",
+    description:
+      "Developed algorithms to detect degraded routing quality across large multi-layer chip layouts and generate timing-, noise- and DRC-aware routing improvements.",
+    meta: "IBM\nJan 2025 – Mar 2025",
+    tags: [
+      "C++",
+      "Algorithms",
+      "Optimization",
+      "Computational Geometry",
+      "EDA",
+    ],
+  },
+
+  {
+    number: "08",
+    title: "Deep Learning with Natural Language Processing",
+    description:
+      "Built deep learning pipelines for sentiment analysis and neural machine translation using LSTMs, encoder-decoder architectures and attention-based sequence modelling.",
+    meta: "DLNLP, IISc Bangalore\nJul 2023 – Dec 2023",
+    tags: [
+      "Deep Learning",
+      "NLP",
+      "PyTorch",
+      "LSTM",
+      "Attention",
+    ],
+  },
+
+  {
+    number: "09",
     title:
       "Optimizing Power Consumption on Smartphones using Machine Learning",
     description:
@@ -112,7 +142,7 @@ const projects = [
   },
 
   {
-    number: "08",
+    number: "10",
     title: "Movie Recommendation System",
     description:
       "Built an end-to-end recommendation platform combining content-based and collaborative filtering on MovieLens data, with an interactive Django web interface.",
@@ -183,7 +213,7 @@ export default function Home() {
                 </p>
 
                 <span className="section-count">
-                  09 CASE STUDIES
+                  10 CASE STUDIES
                 </span>
               </div>
             </div>

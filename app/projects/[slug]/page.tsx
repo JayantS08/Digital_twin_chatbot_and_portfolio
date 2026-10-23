@@ -330,6 +330,58 @@ const projects: Project[] = [
     ],
     links: [],
   },
+
+  {
+    name: "AI-Assisted Stock Trader",
+    period: "2025",
+    organization: "Personal Project",
+    description:
+      "An autonomous paper-trading system for Indian equities (NSE) that combines GPT-4o-mini AI signal generation, 20+ technical indicators, live news sentiment analysis and realistic Zerodha-model transaction cost simulation — running continuously with full audit trails.",
+    problem:
+      "Building an autonomous trading system that is simultaneously intelligent, disciplined and transparent requires integrating heterogeneous data sources (price feeds, news, technical signals), enforcing hard risk controls, and simulating realistic market microstructure — all without placing real capital at risk.",
+    approach:
+      "Designed a modular Python system with a scheduled orchestrator that fetches live NSE market data, computes 20+ technical indicators, ingests financial news via RSS and NewsAPI, generates AI-driven buy/sell signals using GPT-4o-mini (with a rule-based fallback), applies seven pre-trade risk checks and executes simulated orders with full Zerodha-like brokerage and tax cost simulation. Positions and performance are persisted in SQLite with full CSV export capability.",
+    results:
+      "A continuously running, fully autonomous paper-trading system covering a 70+ stock watchlist that enforces capital preservation rules (15% max drawdown halt, 3% daily loss limit), generates an auditable decision log for every evaluated stock, and benchmarks performance against the Nifty 50 index.",
+    technologies: [
+      "Python",
+      "OpenAI GPT-4o-mini",
+      "SQLAlchemy",
+      "APScheduler",
+      "NSE API",
+      "NewsAPI",
+      "Technical Analysis",
+      "Risk Management",
+      "SQLite",
+    ],
+    links: [],
+  },
+
+  {
+    name: "AI Job Hunter",
+    period: "2025",
+    organization: "Personal Project",
+    description:
+      "An agentic job-search pipeline that autonomously discovers employers from public ATS feeds, ranks open positions against a structured candidate profile with explainable scores, and generates fact-checked, tailored LaTeX résumés and Gmail drafts — with a verifier that blocks every unsupported claim before anything reaches a human inbox.",
+    problem:
+      "Job searching at scale involves repetitive discovery, filtering and personalization work. The deeper challenge is maintaining strict factual accuracy: an LLM that generates cover letters can hallucinate credentials, overclaim patents or invent numbers. The system needed to be both agentic enough to operate autonomously and disciplined enough that every generated document is auditable and truthful.",
+    approach:
+      "Built a Python CLI pipeline that ingests public Greenhouse and Lever ATS feeds, normalizes job records into a unified schema and scores them against a structured candidate profile using a weighted heuristic ranker. For shortlisted roles, the system uses Gemini with Google Search grounding for employer discovery, then generates tailored LaTeX résumés and cover letters from a fact-ID-annotated master profile. A deterministic rule-based checker plus a Gemini verifier validate every claim before a Gmail draft is created. Contact addresses are verified on the company's own website — guessed addresses are never used.",
+    results:
+      "A complete agentic pipeline that runs from cold discovery through to a human-reviewable Gmail draft, with an immutable fact-checking layer that prevents hallucination, patent overclaims and invented metrics. Output includes per-role PDFs, email HTML, and a full SQLite audit trail. Applications directory accumulates tailored packages per company.",
+    technologies: [
+      "Python",
+      "Gemini (Vertex AI)",
+      "Google Search Grounding",
+      "LaTeX / Tectonic",
+      "Gmail API",
+      "Playwright",
+      "SQLite",
+      "Greenhouse ATS",
+      "Lever ATS",
+    ],
+    links: [],
+  },
 ];
 
 function slugify(text: string) {

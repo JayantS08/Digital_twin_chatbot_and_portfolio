@@ -25,6 +25,8 @@ type CaseStudy = {
     alt: string;
     caption: string;
   }[];
+  visualsTitle?: string;
+  visualsSubtitle?: string;
 
   impact?: {
     value: string;
@@ -594,6 +596,235 @@ const studies: Record<string, CaseStudy> = {
     ],
   },
 
+  "ai-assisted-stock-trader": {
+    eyebrow: "AI · AUTONOMOUS AGENTS · QUANTITATIVE FINANCE",
+    title: "AI-Assisted Stock Trader",
+    subtitle:
+      "A fully autonomous paper-trading system for Indian equities that fuses GPT-4o-mini signal generation, 20+ technical indicators and live news sentiment — with hard risk controls and realistic transaction cost simulation.",
+    organization: "Personal Project",
+    period: "2025",
+
+    problemLead:
+      "Can an AI make disciplined, risk-aware trading decisions without any human intervention?",
+
+    problem:
+      "Building an autonomous trading system is significantly harder than training a prediction model. The system must simultaneously ingest live market data, compute technical signals, analyze financial news, generate confident trade decisions, enforce pre-trade risk checks and simulate realistic market costs — all in a continuous loop that recovers gracefully from failures and never loses its financial state.",
+
+    challengeTitle: "Coordinating intelligence, discipline and data in real time",
+
+    challenges: [
+      {
+        title: "Heterogeneous Data",
+        text:
+          "Combining live price feeds, 20+ technical indicators and live news sentiment into a unified signal requires careful normalization and timing alignment.",
+      },
+      {
+        title: "AI Reliability",
+        text:
+          "GPT-4o-mini must generate structured, confidence-rated signals. A rule-based fallback ensures the system continues operating if the LLM is unavailable.",
+      },
+      {
+        title: "Hard Risk Controls",
+        text:
+          "Seven pre-trade checks — including drawdown limits, daily loss caps, position concentration and data freshness — must enforce capital preservation before every order.",
+      },
+      {
+        title: "Realistic Cost Simulation",
+        text:
+          "Simulating Zerodha's brokerage, STT, GST and stamp-duty model is essential for measuring whether a strategy would actually be profitable after costs.",
+      },
+    ],
+
+    approachTitle: "A modular scheduled trading engine",
+
+    approach:
+      "Built a fully modular Python system orchestrated by APScheduler. The market-data layer fetches live NSE quotes (with Alpha Vantage historical fallback) and seeds a 70+ stock watchlist. The feature engine computes 20+ technical indicators using the `ta` library. The news layer ingests RSS feeds from Economic Times, Moneycontrol and Mint plus NewsAPI, and runs GPT-4o-mini sentiment analysis with keyword fallback. The AI engine generates structured buy/sell/hold signals with confidence scores. The risk manager enforces seven sequential pre-trade checks before any order reaches the paper-trading engine, which simulates execution with full Zerodha-model transaction costs. All state is persisted in SQLite and the performance engine benchmarks results against Nifty 50.",
+
+    pipeline: [
+      "NSE live quotes",
+      "20+ technical indicators",
+      "News ingestion + sentiment",
+      "GPT-4o-mini signal",
+      "7 risk checks",
+      "Paper order execution",
+      "SQLite + CSV audit trail",
+    ],
+
+    focusTitle: "System architecture",
+
+    focus: [
+      {
+        label: "INTELLIGENCE",
+        title: "AI Signal Engine",
+        text:
+          "GPT-4o-mini synthesizes price, indicator and sentiment data into structured buy/sell/hold signals with confidence scores and a rule-based fallback.",
+      },
+      {
+        label: "DISCIPLINE",
+        title: "Risk Manager",
+        text:
+          "Seven pre-trade checks enforce market-hours compliance, drawdown limits, daily loss caps, position sizing and data freshness before any order is placed.",
+      },
+      {
+        label: "FIDELITY",
+        title: "Cost Simulation",
+        text:
+          "Zerodha's full brokerage, STT, NSE exchange charges, SEBI charges, stamp duty and GST are computed per order — essential for realistic P&L.",
+      },
+    ],
+
+    insight:
+      "The hardest engineering problem is not the AI — it is building a system that is simultaneously intelligent enough to find opportunities and disciplined enough to protect capital.",
+
+    impact: [
+      {
+        value: "70+",
+        label: "NSE stocks in the active watchlist",
+      },
+      {
+        value: "20+",
+        label: "Technical indicators computed per stock",
+      },
+      {
+        value: "7",
+        label: "Pre-trade risk checks enforced before every order",
+      },
+      {
+        value: "5",
+        label: "CSV audit exports: transactions, positions, decisions, events",
+      },
+    ],
+
+    technologies: [
+      "Python",
+      "OpenAI GPT-4o-mini",
+      "SQLAlchemy",
+      "APScheduler",
+      "NSE India API",
+      "NewsAPI",
+      "Technical Analysis (ta)",
+      "Risk Management",
+      "SQLite",
+      "Pandas",
+      "Pydantic",
+      "structlog",
+    ],
+  },
+
+  "ai-job-hunter": {
+    eyebrow: "AGENTIC AI · LLMs · AUTOMATION",
+    title: "AI Job Hunter",
+    subtitle:
+      "An agentic pipeline that discovers employers, ranks open roles against a structured profile, and generates fact-checked tailored résumés and Gmail drafts — with a verifier that blocks every unsupported claim.",
+    organization: "Personal Project",
+    period: "2025",
+
+    problemLead:
+      "Automate the entire job-search workflow without ever fabricating a credential.",
+
+    problem:
+      "LLMs that generate cover letters and résumés can hallucinate achievements, overclaim patents or invent metrics. The system needed to be both agentic enough to operate from cold discovery through to a human-reviewable draft, and disciplined enough that every sentence in every generated document is traceable to a verified fact.",
+
+    challengeTitle: "Autonomy without hallucination",
+
+    challenges: [
+      {
+        title: "Factual Grounding",
+        text:
+          "Every claim in a generated document must be backed by a fact-ID in a structured master profile. Unsupported claims, invented numbers and patent overclaims are blocked by both a deterministic checker and a Gemini verifier.",
+      },
+      {
+        title: "Contact Verification",
+        text:
+          "HR email addresses are marked verified only when found printed on the company's own website. Guessed or model-suggested addresses are never used for drafts.",
+      },
+      {
+        title: "ATS Heterogeneity",
+        text:
+          "Greenhouse and Lever ATS feeds use different schemas. A normalization layer produces a unified Job record regardless of source.",
+      },
+      {
+        title: "Scale and Deduplication",
+        text:
+          "Discovery across 33 research themes (AI/LLM, infra, fintech, regional hubs, public listings) must deduplicate across runs and accumulate state without losing previous findings.",
+      },
+    ],
+
+    approachTitle: "A fact-checked agentic application pipeline",
+
+    approach:
+      "Built a Python CLI pipeline that ingests public Greenhouse and Lever ATS feeds, normalizes job records into a unified schema and scores them against a structured candidate profile using a weighted heuristic ranker (transferable skills 30%, project relevance 25%, seniority fit 15%, location/authorization fit 15%, company quality 10%, freshness 5%). For shortlisted roles, Gemini with Google Search grounding discovers employers and generates tailored LaTeX résumés and cover letters from a fact-ID-annotated master profile. A deterministic rule-based checker plus a Gemini verifier must both pass before a Gmail draft is created. Confidential IBM patent details live in a git-ignored private profile and are blocked from appearing in any generated document. Output goes to applications/<company>-<role>/ with state tracked in an SQLite outbox.",
+
+    pipeline: [
+      "ATS feed ingestion",
+      "Normalize + deduplicate",
+      "Profile-weighted ranking",
+      "Gemini employer discovery",
+      "LaTeX résumé + cover letter",
+      "Fact-check + LLM verify",
+      "Gmail draft (human approval)",
+    ],
+
+    focusTitle: "Pipeline architecture",
+
+    focus: [
+      {
+        label: "DISCOVERY",
+        title: "ATS Ingestion + Ranking",
+        text:
+          "Public Greenhouse and Lever feeds are fetched, normalized and scored against a structured candidate profile with explainable per-dimension scores.",
+      },
+      {
+        label: "GENERATION",
+        title: "Tailored LaTeX Documents",
+        text:
+          "Per-role résumés and five-paragraph cover letters are generated from a fact-ID-annotated master profile and compiled with Tectonic into production-ready PDFs.",
+      },
+      {
+        label: "VERIFICATION",
+        title: "Dual Fact-Check Layer",
+        text:
+          "A deterministic rule-based checker and a Gemini verifier both must pass before any draft is created. Patent overclaims, invented numbers and confidential terms are individually blocked.",
+      },
+    ],
+
+    insight:
+      "The most important architectural decision was making every generated claim traceable to a fact-ID before the document reaches any human. Autonomy is only valuable when it is also auditable.",
+
+    impact: [
+      {
+        value: "33",
+        label: "Research themes for employer discovery",
+      },
+      {
+        value: "2-layer",
+        label: "Fact-checking: rule-based + Gemini verifier",
+      },
+      {
+        value: "100%",
+        label: "Verified contact addresses — no guessed emails ever used",
+      },
+      {
+        value: "1 CLI",
+        label: "From cold discovery to reviewable Gmail draft",
+      },
+    ],
+
+    technologies: [
+      "Python",
+      "Gemini (Vertex AI)",
+      "Google Search Grounding",
+      "LaTeX / Tectonic",
+      "Gmail API",
+      "Playwright",
+      "SQLite",
+      "Greenhouse ATS",
+      "Lever ATS",
+      "Pandas",
+      "Pydantic",
+    ],
+  },
+
 };
 
 export function hasProjectCaseStudy(slug: string) {
@@ -752,12 +983,10 @@ export default function ProjectCaseStudy({ slug }: { slug: string }) {
             </div>
 
             <div className="pcs-visual-intro">
-              <h2>From sketch to physical layout.</h2>
+              <h2>{project.visualsTitle ?? "From sketch to physical layout."}</h2>
 
               <p>
-                Routing intent is progressively interpreted, mapped to
-                technology rules and reconstructed as connected legal
-                physical geometry.
+                {project.visualsSubtitle ?? "Routing intent is progressively interpreted, mapped to technology rules and reconstructed as connected legal physical geometry."}
               </p>
             </div>
 
